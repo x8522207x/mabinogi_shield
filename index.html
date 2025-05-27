@@ -23,18 +23,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
     <script
       type="text/javascript"
       src="https://frontend.beanfun.com/plugins/game-footer/game-footer.js"
@@ -49,571 +41,2438 @@
     <script src="js/main.js"></script>
   </head>
 
-  <body>
-    <div id="app">
-      <div id="plate_base">
-        <div class="scrollbar">
-          <div class="scrollbar_thumb">
-            <span></span>
-          </div>
-        </div>
-        <div class="cursor"></div>
+  <body style="overflow: visible">
+    <div class="wrap" name="Top">
+      <div class="top">
+        <a class="logo" href="javascript:go_home();">
+          <img
+            src="https://ssl.nexon.com/s2/game/mabinogi/MabiWeb/event/2024/1219_star1st_b2b485/images/logo.png?34a0daa506d9e390b2da"
+            alt="마비노기"
+          />
+        </a>
       </div>
-      <div id="plate_modal">
-        <div class="modal type--youtube">
-          <div
-            class="modal_dimmed"
-            style="background-color: rgba(0, 0, 0, 0.8)"
-          >
-            <div class="loading">
-              <div
-                class="spinner_wave_dots"
-                style="--42f2e9e9: rgba(100, 100, 100, 1)"
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
+
+      <!-- Contents -->
+      <div class="cont cont_01">
+        <div class="intro">
+          <div class="right">
+            <div class="frame"></div>
+            <div class="char breathe"></div>
+            <div class="title"></div>
+            <div class="title_over"></div>
           </div>
-          <div
-            class="modal_wrap"
-            style="
-              translate: none;
-              rotate: none;
-              scale: none;
-              transform: translate(0px, 0px);
-            "
-          >
-            <div class="modal_inner">
-              <div class="modal_box">
-                <div class="modal_box_theme"></div>
-                <div class="modal_box_veil">
-                  <div
-                    class="spinner_wave_dots"
-                    style="--42f2e9e9: rgba(100, 100, 100, 1)"
-                  >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="modal_source">
-                  <span
-                    class="modal_source_ratio"
-                    style="padding-top: 56.4945%"
-                  ></span>
-                </div>
-              </div>
-              <button class="modal_close">
-                <span></span>
-              </button>
-            </div>
+          <div class="left">
+            <div class="frame"></div>
+            <div class="char breathe"></div>
+            <div class="title"></div>
+            <div class="title_over"></div>
+          </div>
+          <div class="title"></div>
+        </div>
+        <div class="cbox">
+          <div class="cbox_btn left"></div>
+          <div class="cbox_btn right"></div>
+          <div class="btn_pop">
+            <a href="#"><span class="btn_span">1ST UPDATE 영상</span></a>
           </div>
         </div>
-        <div id="toast_area"></div>
       </div>
-      <div id="plate_nav">
-        <div class="nav_top">
-          <div
-            class="event_gnb type_clear"
-            style="
-              --75824c3e: rgba(27, 30, 34, 1);
-              --47759c69: rgba(255, 255, 255, 1);
-              --028dbcb1: rgba(122, 99, 67, 1);
-              --aa46ff86: rgba(0, 0, 0, 1);
-              --4fcf305d: rgba(255, 255, 255, 1);
-              --2c0e22cd: rgba(122, 99, 67, 0.05);
-            "
-          >
-            <div class="event_gnb_default">
-              <div class="event_gnb_default_wrap">
-                <div class="event_gnb_default_left">
-                  <button class="event_gnb_menu">
-                    <span></span>
-                  </button>
-                  <a
-                    href="https://warsofprasia.beanfun.com/Main"
-                    class="event_gnb_logo"
-                    target="_blank"
-                  >
-                    <img src="img/icon/LOGO-tw.png" class="icon" />
-                    <img src="img/icon/LOGO.png" class="mobile_icon" />
-                  </a>
-                </div>
-                <div class="event_gnb_default_right">
-                  <div class="event_gnb_gamestart">
-                    <button>GAME START</button>
-                  </div>
-                  <div class="event_gnb_links">
-                    <ul>
-                      <li>
-                        <a
-                          href="https://warsofprasia.beanfun.com/Main"
-                          target="_blank"
-                        >
-                          <i class="i--home -box"></i>
-                          <span></span>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.facebook.com/warsofprasia.tw"
-                          target="_blank"
-                        >
-                          <i class="i--logo-fb -box"></i>
-                          <span></span>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.youtube.com/@user-warsofprasia"
-                          target="_blank"
-                        >
-                          <i class="i--logo-youtube -box"></i>
-                          <span></span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="event_gnb_teleport"></div>
-          </div>
-          <div id="nav_top_teleport"></div>
-        </div>
-        <button class="gotop">
-          <i class="i--gotop"></i>
-        </button>
-        <div class="event_banner" style="--618ead0a: 95px">
-          <span class="event_banner_dimmed"></span>
-          <div class="event_banner_content" style="margin-top: 0px">
-            <div class="event_banner_menu">
-              <button class="event_banner_menu_button">
-                <span>活動</span>
-              </button>
-            </div>
-            <div class="event_banner_content_wrap">
+
+      <div class="tab tab1" style="display: none">
+        <div class="cont cont_02"></div>
+        <div class="cont cont_03">
+          <ul class="gallery">
+            <li>
               <a
-                href="https://warsofprasia.beanfun.com/Main"
-                class="event_banner_home"
-                target="_blank"
-              >
-                <div class="logo">
-                  <span></span>
-                  <img
-                    src="img/icon/LOGO-tw.png"
-                    alt=""
-                    class="visible_roomy"
-                  />
-                  <img
-                    src="img/icon/LOGO-tw.png"
-                    alt=""
-                    class="visible_mobile"
-                  />
+                data-fslightbox="fs"
+                href="https://www.youtube.com/watch?v=sTSMuv3I4-0&amp;enablejsapi=1"
+                ><span class="btn_span"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                data-fslightbox="fs"
+                data-type="image"
+                href="https://ssl.nexon.com/s2/game/mabinogi/MabiWeb/event/2024/1219_star1st_b2b485/images/1.jpg"
+                ><span class="btn_span"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                data-fslightbox="fs"
+                data-type="image"
+                href="https://ssl.nexon.com/s2/game/mabinogi/MabiWeb/event/2024/1219_star1st_b2b485/images/2.jpg"
+                ><span class="btn_span"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                data-fslightbox="fs"
+                data-type="image"
+                href="https://ssl.nexon.com/s2/game/mabinogi/MabiWeb/event/2024/1219_star1st_b2b485/images/3.jpg"
+                ><span class="btn_span"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                data-fslightbox="fs"
+                data-type="image"
+                href="https://ssl.nexon.com/s2/game/mabinogi/MabiWeb/event/2024/1219_star1st_b2b485/images/4.jpg"
+                ><span class="btn_span"></span
+              ></a>
+            </li>
+          </ul>
+          <div class="ho">
+            <div></div>
+          </div>
+        </div>
+        <div class="cont cont_04">
+          <div class="btn_char btn_char1">
+            <div class="bg">
+              <div class="bbox">
+                <div class="vbox">
+                  <audio
+                    class="bgm"
+                    src="https://mabinogi.vod.nexoncdn.co.kr/music/NPC_Vertrag.mp3"
+                    preload="none"
+                    loop=""
+                  ></audio>
+                  <button>보이스 듣기</button>
+                  <div class="vtxt vtxt1 on">
+                    <audio
+                      class="voice"
+                      src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/NPC_Vertrag_1.mp3"
+                      preload="none"
+                    ></audio>
+                  </div>
+                  <div class="vtxt vtxt2" style="display: none">
+                    <audio
+                      class="voice"
+                      src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/NPC_Vertrag_2.mp3"
+                      preload="none"
+                    ></audio>
+                  </div>
+                  <div class="vtxt vtxt3" style="display: none">
+                    <audio
+                      class="voice"
+                      src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/NPC_Vertrag_3.mp3"
+                      preload="none"
+                    ></audio>
+                  </div>
+                  <ul>
+                    <li class="on">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                  </ul>
                 </div>
-              </a>
-              <div class="event_banner_list">
-                <ul>
-                  <li>
-                    <a
-                      href="https://warsofprasia-event.beanfun.com/EventAD/EventAD?eventAdId=10634"
-                      class="event_banner_item"
-                      target="_blank"
-                    >
-                      <div class="image">
-                        <img src="img/icon/banner_01.jpg" alt="" />
-                      </div>
-                      <div class="content">直升30等</div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://tw.hicdn.beanfun.com/beanfun/promo/TWP/20240904/index.html"
-                      class="event_banner_item"
-                      target="_blank"
-                    >
-                      <div class="image">
-                        <img src="img/icon/banner_02_on.jpg" alt="" />
-                      </div>
-                      <div class="content">鯨獅</div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://warsofprasia-event.beanfun.com/eventad/eventad?eventADID=10431"
-                      class="event_banner_item"
-                      target="_blank"
-                    >
-                      <div class="image">
-                        <img src="img/icon/banner_03.jpg" alt="" />
-                      </div>
-                      <div class="content">WPC</div>
-                    </a>
-                  </li>
-                </ul>
+                <div class="ctxt">
+                  별 것도 아닌 녀석도 영웅으로 추앙받는 세상.<br />그 허울 좋은
+                  영예는 이제 피시스 전사의 것!<br /><br />이 몸 페타크, 에린의
+                  영웅이 되어<br />나의 땅 발레스의 영광이 되리라!<br /><br />실로
+                  오랜만에 땅을 밟는 발걸음은 호쾌한 기대감과<br />쾌활한
+                  노랫소리로 가득 차 있습니다.
+                </div>
+                <div class="bgm_info">
+                  <div class="visualizer">
+                    <div class="vvbox">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="txt">대륙의 과거를 가르는 도끼</div>
+                </div>
               </div>
-              <div class="event_banner_store">
-                <a
-                  href="https://play.google.com/store/apps/details?hl=zh-TW&id=com.gamania.twp&referrer=adjust_reftag%3Dc1yWGEH0cDaIG%26utm_source%3D%25E6%25AD%25A3%25E5%25BC%258F%25E5%25AE%2598%25E7%25B6%25B2_AOS"
-                  target="_blank"
-                >
-                  <img
-                    src="img/icon/btn-download-gp.png"
-                    alt="Google Play下載"
-                  />
-                </a>
-                <a
-                  href="https://apps.apple.com/tw/app/%E6%B3%A2%E6%8B%89%E8%A5%BF%E4%BA%9E%E6%88%B0%E8%A8%98/id6451229143"
-                  target="_blank"
-                >
-                  <img
-                    src="img/icon/btn-download-as.png"
-                    alt="Apple Store下載"
-                  />
-                </a>
-                <a
-                  href="https://warsofprasia.beanfun.com/Download?downloadTarget=1"
-                  target="_blank"
-                >
-                  <img src="img/icon/btn-download-pc.png" alt="PC下載" />
-                </a>
+              <div class="btn_close"></div>
+            </div>
+            <div class="char"></div>
+          </div>
+          <div class="btn_char btn_char2">
+            <div class="bg">
+              <div class="bbox">
+                <div class="vbox">
+                  <audio
+                    class="bgm"
+                    src="https://mabinogi.vod.nexoncdn.co.kr/music/NPC_Leannan.mp3"
+                    preload="none"
+                    loop=""
+                  ></audio>
+                  <button>보이스 듣기</button>
+                  <div class="vtxt vtxt1 on">
+                    <audio
+                      class="voice"
+                      src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/NPC_Leannan_1.mp3"
+                      preload="none"
+                    ></audio>
+                  </div>
+                  <div class="vtxt vtxt2" style="display: none">
+                    <audio
+                      class="voice"
+                      src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/NPC_Leannan_2.mp3"
+                      preload="none"
+                    ></audio>
+                  </div>
+                  <div class="vtxt vtxt3" style="display: none">
+                    <audio
+                      class="voice"
+                      src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/NPC_Leannan_3.mp3"
+                      preload="none"
+                    ></audio>
+                  </div>
+                  <ul>
+                    <li class="on">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                  </ul>
+                </div>
+                <div class="ctxt">
+                  오랜만에 딛은 여정의 발걸음에는 친절한 협력자가 있었습니다.<br /><br />페타크뿐만
+                  아니라 다른 이들을 기꺼이 도울 듯<br />부드러운 인상의
+                  소유자.<br /><br />그가 머무르는 곳이 어디일지는
+                  모르겠지만,<br />이 길의 끝에 만나게 될 것을 의심치 않습니다.
+                </div>
+                <div class="bgm_info">
+                  <div class="visualizer">
+                    <div class="vvbox">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="txt">부지런히 정원을 가꾸는</div>
+                </div>
               </div>
+              <div class="btn_close"></div>
+            </div>
+            <div class="char"></div>
+          </div>
+          <div class="btn_char btn_char3">
+            <div class="bg">
+              <div class="bbox">
+                <div class="vbox">
+                  <audio
+                    class="bgm"
+                    src="https://mabinogi.vod.nexoncdn.co.kr/music/NPC_Dairine.mp3"
+                    preload="none"
+                    loop=""
+                  ></audio>
+                  <button>보이스 듣기</button>
+                  <div class="vtxt vtxt1 on">
+                    <audio
+                      class="voice"
+                      src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/NPC_Dairine_1.mp3"
+                      preload="none"
+                    ></audio>
+                  </div>
+                  <div class="vtxt vtxt2" style="display: none">
+                    <audio
+                      class="voice"
+                      src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/NPC_Dairine_2.mp3"
+                      preload="none"
+                    ></audio>
+                  </div>
+                  <div class="vtxt vtxt3" style="display: none">
+                    <audio
+                      class="voice"
+                      src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/NPC_Dairine_3.mp3"
+                      preload="none"
+                    ></audio>
+                  </div>
+                  <ul>
+                    <li class="on">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                  </ul>
+                </div>
+                <div class="ctxt">
+                  그녀가 기억하는 세계는 작고 따뜻하고 안락합니다.<br /><br />친절한
+                  이웃 주민, 마음을 나누는 친구.<br />늘 상냥한 공기와 따스한
+                  온도까지…<br /><br />데린은 선의를 가지고 목소리를 내면<br />세상이
+                  그녀에게 답해줄 것을 믿습니다.
+                </div>
+                <div class="bgm_info">
+                  <div class="visualizer">
+                    <div class="vvbox">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="txt">향기는 잊을 수 없어</div>
+                </div>
+              </div>
+              <div class="btn_close"></div>
+            </div>
+            <div class="char"></div>
+          </div>
+        </div>
+        <div class="cont cont_05">
+          <div class="ho ho1">
+            <div></div>
+          </div>
+          <div class="ho ho2">
+            <div></div>
+          </div>
+          <div class="btn_go">
+            <a href="/page/news/notice_view.asp?id=4892427 "
+              ><span class="btn_span">이벤트 보상 자세히 보기</span></a
+            >
+          </div>
+        </div>
+        <div class="cont cont_06">
+          <div class="part part1">
+            <div class="ho ho1">
+              <div></div>
+            </div>
+            <div class="ho ho2">
+              <div></div>
+            </div>
+            <div class="btn_go_soop btn_go_soop1">
+              <a
+                target="_blank"
+                href="https://vod.sooplive.co.kr/player/145912339?change_second=3756"
+                ><span class="btn_span">아이네</span></a
+              >
+            </div>
+            <div class="btn_go_soop btn_go_soop2">
+              <a
+                target="_blank"
+                href="https://vod.sooplive.co.kr/player/145912385?change_second=6166"
+                ><span class="btn_span">징버거</span></a
+              >
+            </div>
+          </div>
+          <div class="part part2">
+            <div class="btn_go_webtoon">
+              <a target="_blank" href="/page/ucc/comic_list.asp?corner=1196"
+                ><span class="btn_span">웹툰 감상하러 가기</span></a
+              >
             </div>
           </div>
         </div>
+
+        <div class="event_info_wrap">
+          <h2>안내 사항 <small>꼭 읽어주세요</small></h2>
+          <div class="event_ibox" id="event_ibox1">
+            <p>
+              <strong>[안락의 정원을 방문하라! 이벤트 안내]</strong><br />
+              * G26 진행 중에는 G27을 시작할 수 없으며, G26을 진행하지 않았거나
+              완료한 캐릭터만 G27 수행이 가능합니다.<br />
+              &nbsp;&nbsp; - (G26 완료 캐릭터) 자동으로 시작하기: G26 운명의
+              바람 완료 시 자동으로 G27의 첫 번째 퀘스트 '혜성이 나타나다'가
+              수주됩니다.<br />
+              &nbsp;&nbsp; - (G26 미진행 캐릭터) 직접 시작하기: 누적 레벨 5,000
+              이상일 때 메인스트림 UI를 열어 [G27 안락의 정원 시작하기]를
+              클릭<br />
+              &nbsp;
+            </p>
+
+            <p>
+              <strong>☑&nbsp;타이틀&amp;스티커 상자 지급 이벤트</strong><br />
+              * G27 1부를 클리어한 밀레시안님들께 1/16(목) 점검 중 아래 보상을
+              우편함으로 지급해 드릴 예정입니다. (마비노기ID당 1회)<br />
+              &nbsp;&nbsp; - 마비노기ID 내 G27 1부를 클리어한 캐릭터가 여럿일
+              경우, 클리어 캐릭터 중 누적레벨이 가장 높은 캐릭터의 우편함으로
+              보상이 지급됩니다.&nbsp;
+            </p>
+
+            <table
+              style="
+                border: 0.5pt solid windowtext;
+                border-image: none;
+                width: 638pt;
+                border-collapse: collapse;
+              "
+              width="850"
+            >
+              <tbody>
+                <tr height="22" style="height: 16.5pt">
+                  <td
+                    class="xl68"
+                    height="22"
+                    style="
+                      border: 0.5pt solid windowtext;
+                      border-image: none;
+                      width: 143pt;
+                      height: 16.5pt;
+                      background-color: rgb(14, 26, 81);
+                    "
+                    width="190"
+                  >
+                    <p align="center">
+                      <strong
+                        ><font color="#ffffff"
+                          ><font face="맑은 고딕"
+                            ><font size="2">지급 대상</font></font
+                          ></font
+                        ></strong
+                      >
+                    </p>
+                  </td>
+                  <td
+                    class="xl68"
+                    style="
+                      border-width: 0.5pt 0.5pt 0.5pt medium;
+                      border-style: solid solid solid none;
+                      border-color: windowtext;
+                      width: 236pt;
+                      background-color: rgb(14, 26, 81);
+                    "
+                    width="315"
+                  >
+                    <p align="center">
+                      <strong
+                        ><font color="#ffffff"
+                          ><font face="맑은 고딕"
+                            ><font size="2">아이템명</font></font
+                          ></font
+                        ></strong
+                      >
+                    </p>
+                  </td>
+                  <td
+                    class="xl68"
+                    style="
+                      border-width: 0.5pt 0.5pt 0.5pt medium;
+                      border-style: solid solid solid none;
+                      border-color: windowtext;
+                      width: 176pt;
+                      background-color: rgb(14, 26, 81);
+                    "
+                    width="235"
+                  >
+                    <p align="center">
+                      <strong
+                        ><font color="#ffffff"
+                          ><font face="맑은 고딕"
+                            ><font size="2">구성품</font></font
+                          ></font
+                        ></strong
+                      >
+                    </p>
+                  </td>
+                  <td
+                    class="xl68"
+                    style="
+                      border-width: 0.5pt 0.5pt 0.5pt medium;
+                      border-style: solid solid solid none;
+                      border-color: windowtext;
+                      width: 83pt;
+                      background-color: rgb(14, 26, 81);
+                    "
+                    width="110"
+                  >
+                    <p align="center">
+                      <strong
+                        ><font color="#ffffff"
+                          ><font face="맑은 고딕"
+                            ><font size="2">거래 여부</font></font
+                          ></font
+                        ></strong
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr height="22" style="height: 16.5pt">
+                  <td
+                    class="xl69"
+                    height="88"
+                    rowspan="4"
+                    style="
+                      border-width: medium 0.5pt 0.5pt;
+                      border-style: none solid solid;
+                      border-color: windowtext;
+                      height: 66pt;
+                      background-color: rgb(14, 26, 81);
+                    "
+                  >
+                    <p align="center">
+                      <font color="#ffffff"
+                        ><font face="맑은 고딕"
+                          ><font size="2">G27 1부를 완료한 캐릭터</font></font
+                        ></font
+                      >
+                    </p>
+                  </td>
+                  <td
+                    class="xl65"
+                    style="
+                      border-width: medium 0.5pt 0.5pt medium;
+                      border-style: none solid solid none;
+                      border-color: windowtext;
+                    "
+                  >
+                    <p align="center">
+                      <font face="맑은 고딕"
+                        ><font size="2"
+                          >안락의 정원을 방문한 1차 타이틀 획득 쿠폰</font
+                        ></font
+                      >
+                    </p>
+                  </td>
+                  <td
+                    class="xl65"
+                    style="
+                      border-width: medium 0.5pt 0.5pt medium;
+                      border-style: none solid solid none;
+                      border-color: windowtext;
+                    "
+                  >
+                    <p align="center">
+                      <font face="맑은 고딕"><font size="2">-</font></font>
+                    </p>
+                  </td>
+                  <td
+                    class="xl66"
+                    style="
+                      border-width: medium 0.5pt 0.5pt medium;
+                      border-style: none solid solid none;
+                      border-color: windowtext;
+                    "
+                  >
+                    <p align="center">
+                      <font color="#c00000"
+                        ><font face="맑은 고딕"
+                          ><font size="2">거래 불가</font></font
+                        ></font
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr height="22" style="height: 16.5pt">
+                  <td
+                    class="xl65"
+                    height="66"
+                    rowspan="3"
+                    style="
+                      border-width: medium 0.5pt 0.5pt;
+                      border-style: none solid solid;
+                      border-color: windowtext;
+                      height: 49.5pt;
+                    "
+                  >
+                    <p align="center">
+                      <font face="맑은 고딕"
+                        ><font size="2"
+                          >안락의 정원을 방문한 말풍선 스티커 선물 상자</font
+                        ></font
+                      >
+                    </p>
+                  </td>
+                  <td
+                    class="xl65"
+                    style="
+                      border-width: medium 0.5pt 0.5pt medium;
+                      border-style: none solid solid none;
+                      border-color: windowtext;
+                    "
+                  >
+                    <p align="center">
+                      <font face="맑은 고딕"
+                        ><font size="2">페타크 말풍선 스티커(30일)</font></font
+                      >
+                    </p>
+                  </td>
+                  <td
+                    class="xl67"
+                    style="
+                      border-width: medium 0.5pt 0.5pt medium;
+                      border-style: none solid solid none;
+                      border-color: windowtext;
+                    "
+                  >
+                    <p align="center">
+                      <font color="#0070c0"
+                        ><font face="맑은 고딕"
+                          ><font size="2">거래 가능</font></font
+                        ></font
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr height="22" style="height: 16.5pt">
+                  <td
+                    class="xl65"
+                    height="22"
+                    style="
+                      border-width: medium 0.5pt 0.5pt medium;
+                      border-style: none solid solid none;
+                      border-color: windowtext;
+                      height: 16.5pt;
+                    "
+                  >
+                    <p align="center">
+                      <font face="맑은 고딕"
+                        ><font size="2">데린 말풍선 스티커(30일)</font></font
+                      >
+                    </p>
+                  </td>
+                  <td
+                    class="xl67"
+                    style="
+                      border-width: medium 0.5pt 0.5pt medium;
+                      border-style: none solid solid none;
+                      border-color: windowtext;
+                    "
+                  >
+                    <p align="center">
+                      <font color="#0070c0"
+                        ><font face="맑은 고딕"
+                          ><font size="2">거래 가능</font></font
+                        ></font
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr height="22" style="height: 16.5pt">
+                  <td
+                    class="xl65"
+                    height="22"
+                    style="
+                      border-width: medium 0.5pt 0.5pt medium;
+                      border-style: none solid solid none;
+                      border-color: windowtext;
+                      height: 16.5pt;
+                    "
+                  >
+                    <p align="center">
+                      <font face="맑은 고딕"
+                        ><font size="2">레넨 말풍선 스티커(30일)</font></font
+                      >
+                    </p>
+                  </td>
+                  <td
+                    class="xl67"
+                    style="
+                      border-width: medium 0.5pt 0.5pt medium;
+                      border-style: none solid solid none;
+                      border-color: windowtext;
+                    "
+                  >
+                    <p align="center">
+                      <font color="#0070c0"
+                        ><font face="맑은 고딕"
+                          ><font size="2">거래 가능</font></font
+                        ></font
+                      >
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+              <colgroup>
+                <col style="width: 143pt" width="190" />
+                <col style="width: 236pt" width="315" />
+                <col style="width: 176pt" width="235" />
+                <col style="width: 83pt" width="110" />
+              </colgroup>
+            </table>
+
+            <p>
+              &nbsp;&nbsp; - 모든 보상은 유효 기간이 없으며, 은행 공유
+              가능합니다.<br />
+              &nbsp;&nbsp; - [안락의 정원을 방문한] 1차 타이틀 활성화 시 행운
+              30이 증가합니다.<br />
+              &nbsp;&nbsp; - [안락의 정원을 방문한 말풍선 스티커 선물 상자]는
+              거래가 불가하며, 구성품인 스티커 3종은 거래가 가능합니다.<br />
+              <br />
+              <strong>☑ 넥슨캐시 추첨 이벤트</strong><br />
+              * G27 1부를&nbsp;클리어한 밀레시안님들 중&nbsp;추첨을 통해 아래와
+              같이 넥슨캐시를 지급해&nbsp;드릴 예정입니다.<br />
+              * 당첨자 발표 및 넥슨캐시 지급일: 2025년 2월 6일(목)<br />
+              &nbsp;&nbsp; - 10만 넥슨캐시 (10분)<br />
+              &nbsp;&nbsp;&nbsp;- 5만&nbsp;넥슨캐시 (30분)<br />
+              &nbsp;&nbsp; - 1만&nbsp;넥슨캐시 (500분)<br />
+              &nbsp;&nbsp; - 1천&nbsp;넥슨캐시 (2,700분)
+            </p>
+
+            <p>&nbsp;</p>
+
+            <p>
+              <strong>☑ 유의사항</strong><br />
+              * 부정한 방법을 통해 이벤트에 참여한 경우, 제재를 받을 수 있으며
+              당첨된 보상도 취소됩니다.<br />
+              * 이벤트 기간 및 보상 지급일까지 마비노기 게임의 이용약관 및
+              운영정책을 위반하였거나 제재된 캐릭터는 보상 지급이 취소될 수
+              있습니다.
+            </p>
+          </div>
+        </div>
       </div>
-      <div
-        id="plate_page"
-        style="--72516594: 0px; --9617c380: 0px; --cfc4fde0: 0px"
-      >
-        <div class="page_events_sunkeeper">
-          <div class="nav_side">
-            <div>
-              <ol>
-                <li class="depth_1">
-                  <button class="page_p1">新職業：太陽監視者</button>
+
+      <div class="tab tab2" style="display: none">
+        <div class="cont cont_07">
+          <div class="btn_go btn_go1">
+            <a
+              target="_blank"
+              href="/page/event/2022/0811_next/index.asp#section1"
+              ><span class="btn_span">아르카나란 무엇일까?</span></a
+            >
+          </div>
+          <div class="btn_go btn_go2">
+            <a
+              target="_blank"
+              href="/page/event/2022/0811_next/index.asp#section5"
+              ><span class="btn_span">아르카나 강화에 대해 알아보기</span></a
+            >
+          </div>
+        </div>
+        <div class="cont cont_08">
+          <div class="txt"></div>
+          <div class="btn_char btn_char4">
+            <div class="bg">
+              <div class="bbox">
+                <div class="vbox">
+                  <audio
+                    class="bgm"
+                    src="https://mabinogi.vod.nexoncdn.co.kr/music/NPC_Iolar.mp3"
+                    preload="none"
+                    loop=""
+                  ></audio>
+                </div>
+                <div class="ctxt">
+                  새로운 아르카나 적합자 후보.<br /><br />이올라는 법황청 성전
+                  기사단에서도 특히 빛나는<br />신앙심으로 높게
+                  평가받았습니다.<br /><br />그렇게 사랑의 신 라이미라크의
+                  말씀을 따르고<br />섬기는, 신앙의 삶을 살리라 생각했던
+                  그녀에게<br />새로운 운명이 다가왔습니다.<br /><br />법황청에서
+                  이 믿음직한 인재를 아르카나 협회에 보낸 이유는 무엇일까요?
+                </div>
+                <div class="bgm_info">
+                  <div class="visualizer">
+                    <div class="vvbox">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="txt">주 품에 나를 숨기소서</div>
+                </div>
+              </div>
+              <div class="btn_close"></div>
+            </div>
+            <div class="char"></div>
+          </div>
+        </div>
+        <div class="cont cont_09">
+          <div class="mov_bg">
+            <video
+              src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/8.mp4"
+              autoplay=""
+              muted=""
+              loop=""
+              playsinline=""
+            ></video>
+          </div>
+          <div class="txt"></div>
+          <div class="deco deco1"></div>
+          <div class="deco deco2"></div>
+          <div class="deco deco3"></div>
+          <div class="deco deco4"></div>
+          <div class="deco deco5"></div>
+          <ul class="gallery">
+            <li>
+              <a
+                data-fslightbox="fs2"
+                href="https://www.youtube.com/watch?v=OlkPb5KiW8w&amp;enablejsapi=1"
+                ><span class="btn_span"></span
+              ></a>
+            </li>
+          </ul>
+          <div class="btn_go_pop btn_go_pop1" data-pop-id="s9p1">
+            <a href="#"><span class="btn_span"></span></a>
+          </div>
+          <div class="btn_go_pop btn_go_pop2" data-pop-id="s9p2">
+            <a href="#"><span class="btn_span"></span></a>
+          </div>
+          <div class="btn_go_pop btn_go_pop3" data-pop-id="s9p3">
+            <a href="#"><span class="btn_span"></span></a>
+          </div>
+          <div class="btn_go_pop btn_go_pop4" data-pop-id="s9p4">
+            <a href="#"><span class="btn_span"></span></a>
+          </div>
+          <div class="btn_go_pop btn_go_pop5" data-pop-id="s9p5">
+            <a href="#"><span class="btn_span"></span></a>
+          </div>
+          <div class="btn_go_pop btn_go_pop6" data-pop-id="s9p6">
+            <a href="#"><span class="btn_span"></span></a>
+          </div>
+          <div class="btn_go_pop btn_go_pop7" data-pop-id="s9p7">
+            <a href="#"><span class="btn_span"></span></a>
+          </div>
+        </div>
+        <div class="cont cont_10"></div>
+        <div class="cont cont_11">
+          <div class="btn_go btn_go1">
+            <a target="_blank" href="/page/news/notice_view.asp?id=4892421"
+              ><span class="btn_span">블록버STAR TOON 자세히 보기</span></a
+            >
+          </div>
+          <div class="btn_go btn_go2">
+            <a target="_blank" href="/page/ucc/comic_list.asp?corner=1194"
+              ><span class="btn_span">웹툰 감상하러 가기</span></a
+            >
+          </div>
+          <div class="btn_go btn_go3">
+            <a target="_blank" href="/page/ucc/comic_list.asp?corner=1195"
+              ><span class="btn_span">웹툰 감상하러 가기</span></a
+            >
+          </div>
+        </div>
+        <div class="cont cont_12">
+          <div class="btn_go">
+            <a target="_blank" href="/page/news/event_view.asp?id=4892354"
+              ><span class="btn_span">초보를 위한 아르카나 달성 미션</span></a
+            >
+          </div>
+        </div>
+        <div class="event_info_wrap">
+          <h2>안내 사항 <small>꼭 읽어주세요</small></h2>
+          <div class="event_ibox" id="event_ibox2">
+            <p><span style="font-weight: bold">[연재 정보 상세 안내]</span></p>
+
+            <table
+              class="se-responsive"
+              data-template-id="1"
+              style="
+                width: 87.62%;
+                line-height: normal;
+                vertical-align: text-bottom;
+                border-collapse: collapse;
+                -ms-word-break: break-all;
+              "
+            >
+              <colgroup>
+                <col style="width: 11.58%" />
+                <col style="width: 23.96%" />
+                <col style="width: 32.93%" />
+                <col style="width: 12.78%" />
+                <col style="width: 18.73%" />
+              </colgroup>
+              <tbody>
+                <tr style="height: 11px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                      background-color: rgb(128, 128, 255);
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span style="color: rgb(255, 255, 255); font-weight: bold"
+                        >작</span
+                      ><span
+                        style="color: rgb(255, 255, 255); font-weight: bold"
+                        >가명</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                      background-color: rgb(128, 128, 255);
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span style="color: rgb(255, 255, 255); font-weight: bold"
+                        >타이틀</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                      background-color: rgb(128, 128, 255);
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span style="color: rgb(255, 255, 255); font-weight: bold"
+                        >소개말</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    colspan="2"
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                      background-color: rgb(128, 128, 255);
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span style="color: rgb(255, 255, 255); font-weight: bold"
+                        >연재 계획</span
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 30px">
+                  <td
+                    rowspan="4"
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: center;
+                      vertical-align: middle;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>전구</span>
+                    </p>
+                  </td>
+                  <td
+                    rowspan="4"
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>영웅의 자격</span>
+                    </p>
+                  </td>
+                  <td
+                    rowspan="4"
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>이 세계에 남기 위해 증명하라!</span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>12/19(목)</span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>1화</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 17px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span
+                        ><strike>1/2(목)</strike><br />
+                        → 1/9(목)</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>2화</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 7px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>1/16(목)</span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>3화</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>1/31(금)</span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>4화</span>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p
+              style="
+                margin: 16px 0px;
+                text-align: justify;
+                line-height: 2;
+                font-size: 12pt;
+                display: block;
+                overflow-wrap: break-word;
+              "
+            >
+              &nbsp;
+            </p>
+
+            <table
+              data-template-id="1"
+              style="
+                width: 87.5%;
+                line-height: normal;
+                vertical-align: text-bottom;
+                border-collapse: collapse;
+                -ms-word-break: break-all;
+              "
+            >
+              <colgroup>
+                <col style="width: 11.59%" />
+                <col style="width: 23.99%" />
+                <col style="width: 32.97%" />
+                <col style="width: 12.8%" />
+                <col style="width: 18.62%" />
+              </colgroup>
+              <tbody>
+                <tr style="height: 11px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                      background-color: rgb(128, 128, 255);
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span style="color: rgb(255, 255, 255); font-weight: bold"
+                        >작</span
+                      ><span
+                        style="color: rgb(255, 255, 255); font-weight: bold"
+                        >가명</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                      background-color: rgb(128, 128, 255);
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span style="color: rgb(255, 255, 255); font-weight: bold"
+                        >타이틀</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                      background-color: rgb(128, 128, 255);
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span style="color: rgb(255, 255, 255); font-weight: bold"
+                        >소개말</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    colspan="2"
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                      background-color: rgb(128, 128, 255);
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span style="color: rgb(255, 255, 255); font-weight: bold"
+                        >연재 계획</span
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 30px">
+                  <td
+                    rowspan="4"
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: center;
+                      vertical-align: middle;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>스콜라</span>
+                    </p>
+                  </td>
+                  <td
+                    rowspan="4"
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>굴러서 에린 속으로</span>
+                    </p>
+                  </td>
+                  <td
+                    rowspan="4"
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>새로운 아르카나 발현자들이</span><br />
+                      <span>궁금한&nbsp;</span><span>당신을 위해!</span><br />
+                      <span>&lt;굴러서 게임 속으로&gt;가 에린 세계에</span
+                      ><br />
+                      <span>상륙했습니다.</span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>12/19(목)</span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>세이크리드 가드(상)</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 17px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>12/24(화)</span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>세이크리드 가드(하)</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 7px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>1/16(목)</span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>블래스트 랜서(상)</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>1/23(목)</span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>블래스트 랜서(하)</span>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p
+              style="
+                margin: 16px 0px;
+                text-align: justify;
+                line-height: 2;
+                font-size: 12pt;
+                display: block;
+                overflow-wrap: break-word;
+              "
+            >
+              &nbsp;
+            </p>
+
+            <table
+              data-template-id="1"
+              style="
+                width: 87.61%;
+                line-height: normal;
+                vertical-align: text-bottom;
+                border-collapse: collapse;
+                -ms-word-break: break-all;
+              "
+            >
+              <colgroup>
+                <col style="width: 11.58%" />
+                <col style="width: 23.96%" />
+                <col style="width: 32.93%" />
+                <col style="width: 12.78%" />
+                <col style="width: 18.73%" />
+              </colgroup>
+              <tbody>
+                <tr style="height: 11px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                      background-color: rgb(128, 128, 255);
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span style="color: rgb(255, 255, 255); font-weight: bold"
+                        >작</span
+                      ><span
+                        style="color: rgb(255, 255, 255); font-weight: bold"
+                        >가명</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                      background-color: rgb(128, 128, 255);
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span style="color: rgb(255, 255, 255); font-weight: bold"
+                        >타이틀</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                      background-color: rgb(128, 128, 255);
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span style="color: rgb(255, 255, 255); font-weight: bold"
+                        >소개말</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    colspan="2"
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                      background-color: rgb(128, 128, 255);
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span style="color: rgb(255, 255, 255); font-weight: bold"
+                        >연재 계획</span
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 43px">
+                  <td
+                    rowspan="9"
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: center;
+                      vertical-align: middle;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>도리도리</span>
+                    </p>
+                  </td>
+                  <td
+                    rowspan="9"
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>다시 한 번 마비노기</span>
+                    </p>
+                  </td>
+                  <td
+                    rowspan="9"
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>아주 오랜만에 복귀한</span><br />
+                      <span>밀레시안의 이야기</span>
+                    </p>
+                  </td>
+                  <td
+                    rowspan="4"
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>12/19(목)</span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>프롤로그</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 17px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>1화</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 7px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>2화</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 44px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>3화</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 44px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>12/24(화)</span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>4화</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 44px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span
+                        ><strike>1/2(목)</strike><br />
+                        → 1/9(목)</span
+                      >
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>5화</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 44px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>1/9(목)</span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>6화</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 44px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>1/16(목)</span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>7화</span>
+                    </p>
+                  </td>
+                </tr>
+                <tr style="height: 44px">
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>1/23(목)</span>
+                    </p>
+                  </td>
+                  <td
+                    style="
+                      padding: 5px;
+                      border: 1px solid rgb(0, 0, 0);
+                      border-image: none;
+                      text-align: left;
+                    "
+                  >
+                    <p
+                      style="
+                        margin: 0px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 12pt;
+                        display: block;
+                        overflow-wrap: break-word;
+                      "
+                    >
+                      <span>8화</span>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p
+              style="
+                margin: 16px 0px;
+                text-align: justify;
+                line-height: 2;
+                font-size: 12pt;
+                display: block;
+                overflow-wrap: break-word;
+              "
+            >
+              일부 일정이 변경되어 수정하였습니다.(내용수정 12/30(월) 오후 2시
+              5분)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav" style="display: none">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="btn_go_main"></div>
+      </div>
+      <!-- // Contents End -->
+      <div id="sideNav" class="side_nav">
+        <div
+          class="swrap mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar"
+          style="overflow: visible"
+        >
+          <div
+            id="mCSB_1"
+            class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside"
+            style="max-height: none"
+            tabindex="0"
+          >
+            <div
+              id="mCSB_1_container"
+              class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
+              style="position: relative; top: 0; left: 0"
+              dir="ltr"
+            >
+              <div class="btn_start">
+                <a
+                  href="javascript:MabinogiGameStart();"
+                  data-a2s-code="start-click"
+                  ><span>GAME START</span></a
+                >
+              </div>
+              <div class="btn_home">
+                <a href="javascript:go_home();"
+                  ><span class="btn_span">공식 홈페이지 바로가기</span></a
+                >
+              </div>
+              <div class="today_box">
+                <input
+                  id="today_check"
+                  type="checkbox"
+                  onclick="go_home_today();"
+                />
+                <label for="today_check">
+                  <span class="btn_span">오늘 하루 보지 않기</span>
+                </label>
+              </div>
+              <!-- 해당 항목 활성화 on 클래스 추가 -->
+              <ul class="btn_box ss">
+                <li class="open">
+                  <a href="/page/event/2024/1202_stars/index.asp"
+                    ><span class="btn_span">사전 이벤트</span></a
+                  >
                 </li>
-                <li class="depth_2">
-                  <button class="page_p2">職業介紹</button>
+                <li class="open on">
+                  <a href="/page/event/2024/1219_star1st/index.asp"
+                    ><span class="btn_span">블록버스타 1차 업데이트</span></a
+                  >
                 </li>
-                <li class="depth_2">
-                  <button class="page_p3">角色姿態</button>
+                <li class="open">
+                  <a href="/page/event/2025/0116_star2nd/index.asp"
+                    ><span class="btn_span">블록버스타 2차 업데이트</span></a
+                  >
                 </li>
-                <li class="depth_1">
-                  <button class="page_p4">EP2時空裂縫</button>
+                <li class="open">
+                  <a href="/page/news/event_view.asp?id=4892580"
+                    ><span class="btn_span">브리 레흐 최종장</span></a
+                  >
                 </li>
-                <li class="depth_2">
-                  <button class="page_p5">區域：石牙象之脊</button>
+              </ul>
+              <ul class="btn_box">
+                <li class="open">
+                  <a href="/page/event/2024/1219_burst/index.asp"
+                    ><span class="btn_txt">한겨울의 빛나는 도약</span></a
+                  >
                 </li>
-                <li class="depth_1">
-                  <button class="page_p6">新世界：賽爾頓</button>
+              </ul>
+              <ul class="btn_box">
+                <li class="open">
+                  <a href="/page/news/event_view.asp?id=4892513"
+                    ><span class="btn_txt">샤이의 PC방 샤이닝 시즌 2</span></a
+                  >
                 </li>
-                <li class="depth_1">
-                  <button class="page_p7">EP2紀念更新獎勵</button>
+              </ul>
+              <ul class="btn_box">
+                <li class="open">
+                  <a href="/page/event/2025/0116_pcbang/index.asp"
+                    ><span class="btn_txt"
+                      >마비노기와 함께하는 PC방 프로모션</span
+                    ></a
+                  >
                 </li>
-              </ol>
+              </ul>
             </div>
           </div>
-          <div class="section-pages swiper-container">
-            <div class="page-group swiper-wrapper">
+          <div
+            id="mCSB_1_scrollbar_vertical"
+            class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"
+            style="display: none"
+          >
+            <div class="mCSB_draggerContainer">
               <div
-                class="swiper-slide swiper-slide-page"
-                data-title="新職業：太陽監視者"
+                id="mCSB_1_dragger_vertical"
+                class="mCSB_dragger"
+                style="
+                  position: absolute;
+                  min-height: 50px;
+                  height: 0px;
+                  top: 0px;
+                "
               >
-                <section class="area" id="page1">
-                  <div class="visual">
-                    <span class="bg"></span>
-                    <video loop autoplay muted playsinline id="m-p1Video">
-                      <source
-                        src="img/page1/main_mo_loop.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
-                    <video
-                      loop
-                      autoplay
-                      muted
-                      playsinline
-                      id="p1Video"
-                      class="animate"
-                    >
-                      <source src="img/page1/p1_pc_loop.mp4" type="video/mp4" />
-                    </video>
-                    <span class="bg_overlay"></span>
-                  </div>
-                  <div class="content">
-                    <div class="content_wrap">
-                      <div class="header">
-                        <h2 class="title animate">
-                          <span> </span>
-                        </h2>
-                      </div>
-                      <div class="detail_p1 animate">
-                        <p class="date">2024.10.02（三） UPDATE</p>
-                        <button class="video-open">
-                          <span></span>
-                        </button>
-                        <span class="scroll"></span>
-                      </div>
-                    </div>
-                  </div>
-                </section>
+                <div class="mCSB_dragger_bar" style="line-height: 50px"></div>
               </div>
-              <div data-title="職業介紹" class="swiper-slide swiper-slide-page">
-                <section class="area">
-                  <div class="visual">
-                    <span class="bg_p2"></span>
-                    <span class="dimmed_p2"></span>
-                  </div>
-                  <div class="content">
-                    <div class="content_wrap">
-                      <div class="header">
-                        <h3 class="title_p2">
-                          <sup></sup>
-                          <span>恰卡&沙漏</span>
-                        </h3>
-                      </div>
-                      <div class="detail_p2 animate">
-                        <dl class="weapon">
-                          <dt>洽卡 [武器]</dt>
-                          <dd>
-                            蘊含著守護波拉西亞王室的兩把短劍<br />透過恰卡和牽引繩的形式呈現。
-                          </dd>
-                        </dl>
-                        <div class="weaponLine"></div>
-                        <dl class="gear">
-                          <dt>沙漏 [特化裝備]</dt>
-                          <dd>
-                            操控時間的沙漏<br />引發金黃色的沙浪，同時進行治癒和攻擊。
-                          </dd>
-                        </dl>
-                        <span class="gearLine"></span>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div data-title="角色姿態" class="swiper-slide swiper-slide-page">
-                <section class="area">
-                  <div class="visual">
-                    <span class="bg_p3"></span>
-                    <span class="dimmed_p3"></span>
-                  </div>
-                  <div class="content">
-                    <div class="content_wrap">
-                      <div class="header">
-                        <div class="title_p3">
-                          <sup></sup>
-                          <span>劍舞-疾風-均衡</span>
-                        </div>
-                      </div>
-                      <div class="detail_p3">
-                        <dl class="stans1">
-                          <dt></dt>
-                          <dd>
-                            <strong></strong>
-                            <p></p>
-                            <video
-                              loop
-                              autoplay
-                              muted
-                              playsinline
-                              class="visible-roomy"
-                            >
-                              <source src="img/page3/p3_stans_vod_1.mp4" />
-                            </video>
-                          </dd>
-                        </dl>
-                        <dl class="stans2">
-                          <dt></dt>
-                          <dd>
-                            <strong></strong>
-                            <p></p>
-                            <video
-                              loop
-                              autoplay
-                              muted
-                              playsinline
-                              class="visible-roomy"
-                            >
-                              <source src="img/page3/p3_stans_vod_2.mp4" />
-                            </video>
-                          </dd>
-                        </dl>
-                        <dl class="stans3">
-                          <dt></dt>
-                          <dd>
-                            <strong></strong>
-                            <p></p>
-                            <video
-                              loop
-                              autoplay
-                              muted
-                              playsinline
-                              class="visible-roomy"
-                            >
-                              <source src="img/page3/p3_stans_vod_3.mp4" />
-                            </video>
-                          </dd>
-                        </dl>
-                        <a
-                          href="https://warsofprasia.beanfun.com/Career"
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div data-title="時空裂縫" class="swiper-slide swiper-slide-page">
-                <section class="area" id="page4">
-                  <div class="visual">
-                    <span class="bg_p4"></span>
-                    <span class="dimmed_p4"></span>
-                  </div>
-                  <div class="content">
-                    <div class="content_wrap">
-                      <div class="header">
-                        <h3 class="title_p4">
-                          <span></span>
-                        </h3>
-                      </div>
-                      <div class="detail_p4">
-                        <button class="video-open"></button>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div
-                data-title="區域：石牙象之脊"
-                class="swiper-slide swiper-slide-page"
-              >
-                <section class="area" id="page5">
-                  <div class="visual">
-                    <span class="bg_p5"></span>
-                    <span class="dimmed_p5"></span>
-                    <video
-                      loop
-                      autoplay
-                      muted
-                      playsinline
-                      class="visible-roomy"
-                    >
-                      <source src="img/page5/p5_video_back.mp4" />
-                    </video>
-                    <video loop autoplay muted playsinline>
-                      <source src="img/page5/p5_video_back_m.mp4" />
-                    </video>
-                  </div>
-                  <div class="content">
-                    <div class="content_wrap">
-                      <div class="header">
-                        <div class="title_p5">
-                          <sup>時空縫隙</sup>
-                          <span>石牙象之脊</span>
-                        </div>
-                      </div>
-                      <div class="detail_p5">
-                        <p>
-                          與時空縫隙形成時一同沉睡的石牙象地區<br />隨者1,600年前過去，村莊和人們跨越時間準備迎接守護者
-                        </p>
-                        <ul>
-                          <li>古代姆克羅</li>
-                          <li>黑色刀刃羅班斯</li>
-                          <li>銀色閃光伊斯多爾</li>
-                          <li>野獸調配者</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div
-                data-title="新世界：賽爾頓"
-                class="swiper-slide swiper-slide-page"
-              >
-                <section class="area" id="page6">
-                  <div class="visual">
-                    <span class="bg_p6"></span>
-                    <span class="dimmed_p6"></span>
-                  </div>
-                  <div class="content">
-                    <div class="content_wrap">
-                      <div class="header">
-                        <div class="title_p6">
-                          <sup>新世界</sup>
-                          <span>賽爾頓</span>
-                        </div>
-                      </div>
-                      <div class="detail_p6">
-                        <p>
-                          <span>10月02日 維護後 正式開啟！</span>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div
-                data-title="EP2紀念更新獎勵"
-                class="swiper-slide swiper-slide-page"
-              >
-                <section class="area" id="page7">
-                  <div class="visual">
-                    <span class="bg_p7"></span>
-                  </div>
-                  <div class="content">
-                    <div class="content_wrap">
-                      <div class="header">
-                        <div class="title_p7">
-                          <span></span>
-                        </div>
-                      </div>
-                      <div class="detail_p7">
-                        <dl class="reward1"></dl>
-                        <dl class="reward2"></dl>
-                        <dl class="reward3"></dl>
-                        <div class="swiper-container nested-swiper">
-                          <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                              <img src="./img/page7/p7_reward1_m.png" alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                              <img src="./img/page7/p7_reward2_m.png" alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                              <img src="./img/page7/p7_reward3_m.png" alt="" />
-                            </div>
-                          </div>
-                          <ol>
-                            <li>
-                              <i class="progress1"></i>
-                            </li>
-                            <li>
-                              <i class="progress2"></i>
-                            </li>
-                            <li>
-                              <i class="progress3"></i>
-                            </li>
-                          </ol>
-                          <div class="swiper-button-next"></div>
-                          <div class="swiper-button-prev"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
+              <div class="mCSB_draggerRail"></div>
             </div>
           </div>
+        </div>
+        <div
+          class="btn_toggle"
+          onclick="$('.side_nav').toggleClass('hide');return false"
+        >
+          <a href="#"><span class="btn_span">메뉴 열기/닫기</span></a>
+        </div>
+      </div>
+      <!-- //사이드 메뉴 -->
+
+      <script
+        type="text/javascript"
+        src="https://ssl.nexon.com/s1/global/ngb_gamestart.js"
+      ></script>
+      <script
+        src="https://platform.nexon.com/common/platform.js"
+        type="text/javascript"
+      ></script>
+      <script
+        src="https://platform.nexon.com/ngm/js/NGMModuleInfo.js"
+        type="text/javascript"
+      ></script>
+      <script
+        src="https://platform.nexon.com/ngm/js/npf_ngm.js"
+        type="text/javascript"
+        charset="euc-kr"
+      ></script>
+      <script>
+        // 신규 게임스타트
+        function MabinogiGameStart() {
+          $h.a2s.sendClickLog("GAME_START", '{"MabiID":""}');
+
+          $.ajax({
+            url: "/page/common/gamestart.asp",
+            async: false,
+            type: "post",
+            dataType: "text",
+            data: {},
+            timeout: 30000,
+            success: function (data) {
+              if (data == "2") {
+                if (
+                  confirm(
+                    "로그인 후 이용 가능한 서비스 입니다. 로그인 하시겠습니까?"
+                  )
+                ) {
+                  location.href =
+                    "/page/member/login.asp?url=/page/event/2024/1219_star1st/index.asp";
+                  return false;
+                }
+              } else if (data == "3") {
+                alert("이메일ID로 로그인해주세요.");
+              } else if (data == "4") {
+                alert("게임중에 시작할 수 없습니다.");
+              } else if (data == "5") {
+                alert("마비노기ID로 다시 로그인해주세요.");
+                NgbLogin.Logout();
+              } else if (data == "6") {
+                alert("이메일ID로 다시 로그인해주세요.");
+                NgbLogin.Logout();
+              } else if (data == "7") {
+                alert("마비노기ID를 생성해주세요.");
+                location.href = "/page/main/index.asp";
+              } else if (data == "8") {
+                alert("제 3자 정보제공 동의 후 이용해주세요.");
+                location.href = "/page/main/index.asp";
+              } else {
+                NGM.LaunchGame("74245", data);
+                // 구글 ga
+                ga("send", "event", "게임시작", "버튼클릭", "메인 페이지");
+                // 페이스북 필셀
+                fbq("track", "Gamestart");
+                // 구글 스니펫
+                gtag_report_conversion();
+                // 페이스북 전환 추적
+                fbq("trackCustom", "CompleteRegistration_Btn");
+              }
+            },
+            error: function (xhr, textStatus, errorThrown) {
+              alert("오류 발생");
+            },
+          });
+        }
+
+        // Event snippet for 게임 실행 버튼 클릭
+        function gtag_report_conversion(url) {
+          var callback = function () {
+            if (typeof url != "undefined") {
+              window.location = url;
+            }
+          };
+
+          gtag("event", "conversion", {
+            send_to: "AW-940915063/IMApCMj8r4QBEPfy1MAD",
+            event_callback: callback,
+          });
+          return false;
+        }
+      </script>
+      <!-- //사이드 메뉴 -->
+    </div>
+
+    <div class="btn_go_top">
+      <a href="#Top"><span class="btn_span"></span></a>
+    </div>
+
+    <div class="pop_dimmed" style="display: none"></div>
+
+    <div class="pop_mov" style="display: none">
+      <div class="pop_close"></div>
+      <iframe
+        src="https://www.youtube.com/embed/-MCyST4yM7g"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen=""
+        data-gtm-yt-inspected-6="true"
+        id="446369414"
+        data-gtm-yt-inspected-20="true"
+        data-gtm-yt-inspected-11184324_280="true"
+        data-gtm-yt-inspected-286="true"
+      ></iframe>
+    </div>
+
+    <div class="pop_wrap">
+      <div class="pop_bg"></div>
+      <div class="pop_box">
+        <div class="pop s9p1">
+          <div class="v v1">
+            <video
+              src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/1.mp4"
+              muted=""
+              loop=""
+              playsinline=""
+            ></video>
+          </div>
+          <div class="pop_close"></div>
+        </div>
+        <div class="pop s9p2">
+          <div class="v v1">
+            <video
+              src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/2.mp4"
+              muted=""
+              loop=""
+              playsinline=""
+            ></video>
+          </div>
+          <div class="pop_close"></div>
+        </div>
+        <div class="pop s9p3">
+          <div class="v v1">
+            <video
+              src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/3.mp4"
+              muted=""
+              loop=""
+              playsinline=""
+            ></video>
+          </div>
+          <div class="pop_close"></div>
+        </div>
+        <div class="pop s9p4">
+          <div class="v v1">
+            <video
+              src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/4.mp4"
+              muted=""
+              loop=""
+              playsinline=""
+            ></video>
+          </div>
+          <div class="pop_close"></div>
+        </div>
+        <div class="pop s9p5">
+          <div class="v v1">
+            <video
+              src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/5.mp4"
+              muted=""
+              loop=""
+              playsinline=""
+            ></video>
+          </div>
+          <div class="pop_close"></div>
+        </div>
+        <div class="pop s9p6">
+          <div class="v v1">
+            <video
+              src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/6.mp4"
+              muted=""
+              loop=""
+              playsinline=""
+            ></video>
+          </div>
+          <div class="pop_close"></div>
+        </div>
+        <div class="pop s9p7">
+          <div class="v v1">
+            <video
+              src="https://mabinogi.vod.nexoncdn.co.kr/mabinogi_update/2024/1219_star1st_b2b485/7.mp4"
+              muted=""
+              loop=""
+              playsinline=""
+            ></video>
+          </div>
+          <div class="pop_close"></div>
         </div>
       </div>
     </div>
