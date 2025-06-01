@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-tw">
+<html lang="zh-tw" style="overflow: visible">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,16 +7,19 @@
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="666" />
     <meta property="og:image:height" content="364" />
-    <meta property="og:title" content="波拉西亞戰記-砂之刺客" />
-    <meta property="og:description" content="波拉西亞戰記-要塞即將開放" />
+    <meta property="og:title" content="blockbuSTAR 第1波改版" />
+    <meta
+      property="og:description"
+      content="新瑪奇G27 安樂之庭更新！守護戰場的盾牌——全新祕法聖盾守衛登場！"
+    />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>波拉西亞戰記-砂之刺客 | Wars of Prasia</title>
-    <link
+    <title>blockbuSTAR 第1波改版</title>
+    <!-- <link
       rel="mask-icon"
       href="img/icon/safari-pinned-tab.svg"
       color="#162c32"
     />
-    <link rel="shortcut icon" href="img/icon/favicon.ico" />
+    <link rel="shortcut icon" href="img/icon/favicon.ico" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,27 +27,31 @@
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/menu.css" />
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" defer />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" defer />
+    <link rel="stylesheet" type="text/css" href="css/base.css" defer />
     <script
       type="text/javascript"
       src="https://frontend.beanfun.com/plugins/game-footer/game-footer.js"
       id="game-footer"
-      prod="波拉西亞"
+      prod="新瑪奇"
       theme="dark"
+      defer
     ></script>
-    <script
+    <!-- <script
       type="text/javascript"
       src="https://tw.beanfun.com/js/GA_CodeNew.js"
-    ></script>
-    <script src="js/main.js"></script>
+      defer
+    ></script> -->
+    <script src="js/fslightbox.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
 
   <body style="overflow: visible">
     <div class="wrap" name="Top">
       <div class="top">
-        <a class="logo" href="javascript:go_home();">
+        <a class="logo" href="">
           <img src="./img/page/logo.png" alt="마비노기" />
         </a>
       </div>
@@ -58,638 +65,14 @@
             <div class="title"></div>
             <div class="title_over"></div>
           </div>
-          <div class="left">
-            <div class="frame"></div>
-            <div class="char breathe"></div>
-            <div class="title"></div>
-            <div class="title_over"></div>
-          </div>
           <div class="title"></div>
         </div>
         <div class="cbox">
-          <div class="cbox_btn left"></div>
           <div class="cbox_btn right"></div>
           <div class="btn_pop">
-            <a href="#"><span class="btn_span">1ST UPDATE 영상</span></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="tab tab1" style="display: none">
-        <div class="cont cont_02"></div>
-        <div class="cont cont_03">
-          <ul class="gallery">
-            <li>
-              <a
-                data-fslightbox="fs"
-                href="https://www.youtube.com/watch?v=sTSMuv3I4-0&amp;enablejsapi=1"
-              >
-                <span class="btn_span"></span>
-              </a>
-            </li>
-            <li>
-              <a data-fslightbox="fs" data-type="image" href="./img/page/1.jpg">
-                <span class="btn_span"></span>
-              </a>
-            </li>
-            <li>
-              <a data-fslightbox="fs" data-type="image" href="./img/page/2.jpg">
-                <span class="btn_span"></span>
-              </a>
-            </li>
-            <li>
-              <a data-fslightbox="fs" data-type="image" href="./img/page/3.jpg">
-                <span class="btn_span"></span>
-              </a>
-            </li>
-            <li>
-              <a data-fslightbox="fs" data-type="image" href="./img/page/4.jpg">
-                <span class="btn_span"></span>
-              </a>
-            </li>
-          </ul>
-          <div class="ho">
-            <div></div>
-          </div>
-        </div>
-        <div class="cont cont_04">
-          <div class="btn_char btn_char1">
-            <div class="bg">
-              <div class="bbox">
-                <div class="vbox">
-                  <audio
-                    class="bgm"
-                    src="./music/NPC_Vertrag.mp3"
-                    preload="none"
-                    loop=""
-                  ></audio>
-                  <button>보이스 듣기</button>
-                  <div class="vtxt vtxt1 on">
-                    <audio
-                      class="voice"
-                      src="./music/NPC_Vertrag_1.mp3"
-                      preload="none"
-                    ></audio>
-                  </div>
-                  <div class="vtxt vtxt2" style="display: none">
-                    <audio
-                      class="voice"
-                      src="./music/NPC_Vertrag_2.mp3"
-                      preload="none"
-                    ></audio>
-                  </div>
-                  <div class="vtxt vtxt3" style="display: none">
-                    <audio
-                      class="voice"
-                      src="./music/NPC_Vertrag_3.mp3"
-                      preload="none"
-                    ></audio>
-                  </div>
-                  <ul>
-                    <li class="on">1</li>
-                    <li>2</li>
-                    <li>3</li>
-                  </ul>
-                </div>
-                <div class="ctxt">
-                  별 것도 아닌 녀석도 영웅으로 추앙받는 세상.<br />그 허울 좋은
-                  영예는 이제 피시스 전사의 것!<br /><br />이 몸 페타크, 에린의
-                  영웅이 되어<br />나의 땅 발레스의 영광이 되리라!<br /><br />실로
-                  오랜만에 땅을 밟는 발걸음은 호쾌한 기대감과<br />쾌활한
-                  노랫소리로 가득 차 있습니다.
-                </div>
-                <div class="bgm_info">
-                  <div class="visualizer">
-                    <div class="vvbox">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                  <div class="txt">대륙의 과거를 가르는 도끼</div>
-                </div>
-              </div>
-              <div class="btn_close"></div>
-            </div>
-            <div class="char"></div>
-          </div>
-          <div class="btn_char btn_char2">
-            <div class="bg">
-              <div class="bbox">
-                <div class="vbox">
-                  <audio
-                    class="bgm"
-                    src="./music/NPC_Leannan.mp3"
-                    preload="none"
-                    loop=""
-                  ></audio>
-                  <button>보이스 듣기</button>
-                  <div class="vtxt vtxt1 on">
-                    <audio
-                      class="voice"
-                      src="./music/NPC_Leannan_1.mp3"
-                      preload="none"
-                    ></audio>
-                  </div>
-                  <div class="vtxt vtxt2" style="display: none">
-                    <audio
-                      class="voice"
-                      src="./music/NPC_Leannan_2.mp3"
-                      preload="none"
-                    ></audio>
-                  </div>
-                  <div class="vtxt vtxt3" style="display: none">
-                    <audio
-                      class="voice"
-                      src="./music/NPC_Leannan_3.mp3"
-                      preload="none"
-                    ></audio>
-                  </div>
-                  <ul>
-                    <li class="on">1</li>
-                    <li>2</li>
-                    <li>3</li>
-                  </ul>
-                </div>
-                <div class="ctxt">
-                  오랜만에 딛은 여정의 발걸음에는 친절한 협력자가 있었습니다.<br /><br />페타크뿐만
-                  아니라 다른 이들을 기꺼이 도울 듯<br />부드러운 인상의
-                  소유자.<br /><br />그가 머무르는 곳이 어디일지는
-                  모르겠지만,<br />이 길의 끝에 만나게 될 것을 의심치 않습니다.
-                </div>
-                <div class="bgm_info">
-                  <div class="visualizer">
-                    <div class="vvbox">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                  <div class="txt">부지런히 정원을 가꾸는</div>
-                </div>
-              </div>
-              <div class="btn_close"></div>
-            </div>
-            <div class="char"></div>
-          </div>
-          <div class="btn_char btn_char3">
-            <div class="bg">
-              <div class="bbox">
-                <div class="vbox">
-                  <audio
-                    class="bgm"
-                    src="./music/NPC_Dairine.mp3"
-                    preload="none"
-                    loop=""
-                  ></audio>
-                  <button>보이스 듣기</button>
-                  <div class="vtxt vtxt1 on">
-                    <audio
-                      class="voice"
-                      src="./music/NPC_Dairine_1.mp3"
-                      preload="none"
-                    ></audio>
-                  </div>
-                  <div class="vtxt vtxt2" style="display: none">
-                    <audio
-                      class="voice"
-                      src="./music/NPC_Dairine_2.mp3"
-                      preload="none"
-                    ></audio>
-                  </div>
-                  <div class="vtxt vtxt3" style="display: none">
-                    <audio
-                      class="voice"
-                      src="./music/NPC_Dairine_3.mp3"
-                      preload="none"
-                    ></audio>
-                  </div>
-                  <ul>
-                    <li class="on">1</li>
-                    <li>2</li>
-                    <li>3</li>
-                  </ul>
-                </div>
-                <div class="ctxt">
-                  그녀가 기억하는 세계는 작고 따뜻하고 안락합니다.<br /><br />친절한
-                  이웃 주민, 마음을 나누는 친구.<br />늘 상냥한 공기와 따스한
-                  온도까지…<br /><br />데린은 선의를 가지고 목소리를 내면<br />세상이
-                  그녀에게 답해줄 것을 믿습니다.
-                </div>
-                <div class="bgm_info">
-                  <div class="visualizer">
-                    <div class="vvbox">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                  <div class="txt">향기는 잊을 수 없어</div>
-                </div>
-              </div>
-              <div class="btn_close"></div>
-            </div>
-            <div class="char"></div>
-          </div>
-        </div>
-        <div class="cont cont_05">
-          <div class="ho ho1">
-            <div></div>
-          </div>
-          <div class="ho ho2">
-            <div></div>
-          </div>
-          <div class="btn_go">
-            <a href="/page/news/notice_view.asp?id=4892427 "
-              ><span class="btn_span">이벤트 보상 자세히 보기</span></a
-            >
-          </div>
-        </div>
-        <div class="cont cont_06">
-          <div class="part part1">
-            <div class="ho ho1">
-              <div></div>
-            </div>
-            <div class="ho ho2">
-              <div></div>
-            </div>
-            <div class="btn_go_soop btn_go_soop1">
-              <a
-                target="_blank"
-                href="https://vod.sooplive.co.kr/player/145912339?change_second=3756"
-                ><span class="btn_span">아이네</span></a
-              >
-            </div>
-            <div class="btn_go_soop btn_go_soop2">
-              <a
-                target="_blank"
-                href="https://vod.sooplive.co.kr/player/145912385?change_second=6166"
-                ><span class="btn_span">징버거</span></a
-              >
-            </div>
-          </div>
-          <div class="part part2">
-            <div class="btn_go_webtoon">
-              <a target="_blank" href="/page/ucc/comic_list.asp?corner=1196"
-                ><span class="btn_span">웹툰 감상하러 가기</span></a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="event_info_wrap">
-          <h2>안내 사항 <small>꼭 읽어주세요</small></h2>
-          <div class="event_ibox" id="event_ibox1">
-            <p>
-              <strong>[안락의 정원을 방문하라! 이벤트 안내]</strong><br />
-              * G26 진행 중에는 G27을 시작할 수 없으며, G26을 진행하지 않았거나
-              완료한 캐릭터만 G27 수행이 가능합니다.<br />
-              &nbsp;&nbsp; - (G26 완료 캐릭터) 자동으로 시작하기: G26 운명의
-              바람 완료 시 자동으로 G27의 첫 번째 퀘스트 '혜성이 나타나다'가
-              수주됩니다.<br />
-              &nbsp;&nbsp; - (G26 미진행 캐릭터) 직접 시작하기: 누적 레벨 5,000
-              이상일 때 메인스트림 UI를 열어 [G27 안락의 정원 시작하기]를
-              클릭<br />
-              &nbsp;
-            </p>
-
-            <p>
-              <strong>☑&nbsp;타이틀&amp;스티커 상자 지급 이벤트</strong><br />
-              * G27 1부를 클리어한 밀레시안님들께 1/16(목) 점검 중 아래 보상을
-              우편함으로 지급해 드릴 예정입니다. (마비노기ID당 1회)<br />
-              &nbsp;&nbsp; - 마비노기ID 내 G27 1부를 클리어한 캐릭터가 여럿일
-              경우, 클리어 캐릭터 중 누적레벨이 가장 높은 캐릭터의 우편함으로
-              보상이 지급됩니다.&nbsp;
-            </p>
-
-            <table
-              style="
-                border: 0.5pt solid windowtext;
-                border-image: none;
-                width: 638pt;
-                border-collapse: collapse;
-              "
-              width="850"
-            >
-              <tbody>
-                <tr height="22" style="height: 16.5pt">
-                  <td
-                    class="xl68"
-                    height="22"
-                    style="
-                      border: 0.5pt solid windowtext;
-                      border-image: none;
-                      width: 143pt;
-                      height: 16.5pt;
-                      background-color: rgb(14, 26, 81);
-                    "
-                    width="190"
-                  >
-                    <p align="center">
-                      <strong
-                        ><font color="#ffffff"
-                          ><font face="맑은 고딕"
-                            ><font size="2">지급 대상</font></font
-                          ></font
-                        ></strong
-                      >
-                    </p>
-                  </td>
-                  <td
-                    class="xl68"
-                    style="
-                      border-width: 0.5pt 0.5pt 0.5pt medium;
-                      border-style: solid solid solid none;
-                      border-color: windowtext;
-                      width: 236pt;
-                      background-color: rgb(14, 26, 81);
-                    "
-                    width="315"
-                  >
-                    <p align="center">
-                      <strong
-                        ><font color="#ffffff"
-                          ><font face="맑은 고딕"
-                            ><font size="2">아이템명</font></font
-                          ></font
-                        ></strong
-                      >
-                    </p>
-                  </td>
-                  <td
-                    class="xl68"
-                    style="
-                      border-width: 0.5pt 0.5pt 0.5pt medium;
-                      border-style: solid solid solid none;
-                      border-color: windowtext;
-                      width: 176pt;
-                      background-color: rgb(14, 26, 81);
-                    "
-                    width="235"
-                  >
-                    <p align="center">
-                      <strong
-                        ><font color="#ffffff"
-                          ><font face="맑은 고딕"
-                            ><font size="2">구성품</font></font
-                          ></font
-                        ></strong
-                      >
-                    </p>
-                  </td>
-                  <td
-                    class="xl68"
-                    style="
-                      border-width: 0.5pt 0.5pt 0.5pt medium;
-                      border-style: solid solid solid none;
-                      border-color: windowtext;
-                      width: 83pt;
-                      background-color: rgb(14, 26, 81);
-                    "
-                    width="110"
-                  >
-                    <p align="center">
-                      <strong
-                        ><font color="#ffffff"
-                          ><font face="맑은 고딕"
-                            ><font size="2">거래 여부</font></font
-                          ></font
-                        ></strong
-                      >
-                    </p>
-                  </td>
-                </tr>
-                <tr height="22" style="height: 16.5pt">
-                  <td
-                    class="xl69"
-                    height="88"
-                    rowspan="4"
-                    style="
-                      border-width: medium 0.5pt 0.5pt;
-                      border-style: none solid solid;
-                      border-color: windowtext;
-                      height: 66pt;
-                      background-color: rgb(14, 26, 81);
-                    "
-                  >
-                    <p align="center">
-                      <font color="#ffffff"
-                        ><font face="맑은 고딕"
-                          ><font size="2">G27 1부를 완료한 캐릭터</font></font
-                        ></font
-                      >
-                    </p>
-                  </td>
-                  <td
-                    class="xl65"
-                    style="
-                      border-width: medium 0.5pt 0.5pt medium;
-                      border-style: none solid solid none;
-                      border-color: windowtext;
-                    "
-                  >
-                    <p align="center">
-                      <font face="맑은 고딕"
-                        ><font size="2"
-                          >안락의 정원을 방문한 1차 타이틀 획득 쿠폰</font
-                        ></font
-                      >
-                    </p>
-                  </td>
-                  <td
-                    class="xl65"
-                    style="
-                      border-width: medium 0.5pt 0.5pt medium;
-                      border-style: none solid solid none;
-                      border-color: windowtext;
-                    "
-                  >
-                    <p align="center">
-                      <font face="맑은 고딕"><font size="2">-</font></font>
-                    </p>
-                  </td>
-                  <td
-                    class="xl66"
-                    style="
-                      border-width: medium 0.5pt 0.5pt medium;
-                      border-style: none solid solid none;
-                      border-color: windowtext;
-                    "
-                  >
-                    <p align="center">
-                      <font color="#c00000"
-                        ><font face="맑은 고딕"
-                          ><font size="2">거래 불가</font></font
-                        ></font
-                      >
-                    </p>
-                  </td>
-                </tr>
-                <tr height="22" style="height: 16.5pt">
-                  <td
-                    class="xl65"
-                    height="66"
-                    rowspan="3"
-                    style="
-                      border-width: medium 0.5pt 0.5pt;
-                      border-style: none solid solid;
-                      border-color: windowtext;
-                      height: 49.5pt;
-                    "
-                  >
-                    <p align="center">
-                      <font face="맑은 고딕"
-                        ><font size="2"
-                          >안락의 정원을 방문한 말풍선 스티커 선물 상자</font
-                        ></font
-                      >
-                    </p>
-                  </td>
-                  <td
-                    class="xl65"
-                    style="
-                      border-width: medium 0.5pt 0.5pt medium;
-                      border-style: none solid solid none;
-                      border-color: windowtext;
-                    "
-                  >
-                    <p align="center">
-                      <font face="맑은 고딕"
-                        ><font size="2">페타크 말풍선 스티커(30일)</font></font
-                      >
-                    </p>
-                  </td>
-                  <td
-                    class="xl67"
-                    style="
-                      border-width: medium 0.5pt 0.5pt medium;
-                      border-style: none solid solid none;
-                      border-color: windowtext;
-                    "
-                  >
-                    <p align="center">
-                      <font color="#0070c0"
-                        ><font face="맑은 고딕"
-                          ><font size="2">거래 가능</font></font
-                        ></font
-                      >
-                    </p>
-                  </td>
-                </tr>
-                <tr height="22" style="height: 16.5pt">
-                  <td
-                    class="xl65"
-                    height="22"
-                    style="
-                      border-width: medium 0.5pt 0.5pt medium;
-                      border-style: none solid solid none;
-                      border-color: windowtext;
-                      height: 16.5pt;
-                    "
-                  >
-                    <p align="center">
-                      <font face="맑은 고딕"
-                        ><font size="2">데린 말풍선 스티커(30일)</font></font
-                      >
-                    </p>
-                  </td>
-                  <td
-                    class="xl67"
-                    style="
-                      border-width: medium 0.5pt 0.5pt medium;
-                      border-style: none solid solid none;
-                      border-color: windowtext;
-                    "
-                  >
-                    <p align="center">
-                      <font color="#0070c0"
-                        ><font face="맑은 고딕"
-                          ><font size="2">거래 가능</font></font
-                        ></font
-                      >
-                    </p>
-                  </td>
-                </tr>
-                <tr height="22" style="height: 16.5pt">
-                  <td
-                    class="xl65"
-                    height="22"
-                    style="
-                      border-width: medium 0.5pt 0.5pt medium;
-                      border-style: none solid solid none;
-                      border-color: windowtext;
-                      height: 16.5pt;
-                    "
-                  >
-                    <p align="center">
-                      <font face="맑은 고딕"
-                        ><font size="2">레넨 말풍선 스티커(30일)</font></font
-                      >
-                    </p>
-                  </td>
-                  <td
-                    class="xl67"
-                    style="
-                      border-width: medium 0.5pt 0.5pt medium;
-                      border-style: none solid solid none;
-                      border-color: windowtext;
-                    "
-                  >
-                    <p align="center">
-                      <font color="#0070c0"
-                        ><font face="맑은 고딕"
-                          ><font size="2">거래 가능</font></font
-                        ></font
-                      >
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-              <colgroup>
-                <col style="width: 143pt" width="190" />
-                <col style="width: 236pt" width="315" />
-                <col style="width: 176pt" width="235" />
-                <col style="width: 83pt" width="110" />
-              </colgroup>
-            </table>
-
-            <p>
-              &nbsp;&nbsp; - 모든 보상은 유효 기간이 없으며, 은행 공유
-              가능합니다.<br />
-              &nbsp;&nbsp; - [안락의 정원을 방문한] 1차 타이틀 활성화 시 행운
-              30이 증가합니다.<br />
-              &nbsp;&nbsp; - [안락의 정원을 방문한 말풍선 스티커 선물 상자]는
-              거래가 불가하며, 구성품인 스티커 3종은 거래가 가능합니다.<br />
-              <br />
-              <strong>☑ 넥슨캐시 추첨 이벤트</strong><br />
-              * G27 1부를&nbsp;클리어한 밀레시안님들 중&nbsp;추첨을 통해 아래와
-              같이 넥슨캐시를 지급해&nbsp;드릴 예정입니다.<br />
-              * 당첨자 발표 및 넥슨캐시 지급일: 2025년 2월 6일(목)<br />
-              &nbsp;&nbsp; - 10만 넥슨캐시 (10분)<br />
-              &nbsp;&nbsp;&nbsp;- 5만&nbsp;넥슨캐시 (30분)<br />
-              &nbsp;&nbsp; - 1만&nbsp;넥슨캐시 (500분)<br />
-              &nbsp;&nbsp; - 1천&nbsp;넥슨캐시 (2,700분)
-            </p>
-
-            <p>&nbsp;</p>
-
-            <p>
-              <strong>☑ 유의사항</strong><br />
-              * 부정한 방법을 통해 이벤트에 참여한 경우, 제재를 받을 수 있으며
-              당첨된 보상도 취소됩니다.<br />
-              * 이벤트 기간 및 보상 지급일까지 마비노기 게임의 이용약관 및
-              운영정책을 위반하였거나 제재된 캐릭터는 보상 지급이 취소될 수
-              있습니다.
-            </p>
+            <a href="#">
+              <span class="btn_span">1ST UPDATE 영상</span>
+            </a>
           </div>
         </div>
       </div>
@@ -697,18 +80,10 @@
       <div class="tab tab2" style="display: none">
         <div class="cont cont_07">
           <div class="btn_go btn_go1">
-            <a
-              target="_blank"
-              href="/page/event/2022/0811_next/index.asp#section1"
-              ><span class="btn_span">아르카나란 무엇일까?</span></a
-            >
+            <span class="btn_span">아르카나란 무엇일까?</span>
           </div>
           <div class="btn_go btn_go2">
-            <a
-              target="_blank"
-              href="/page/event/2022/0811_next/index.asp#section5"
-              ><span class="btn_span">아르카나 강화에 대해 알아보기</span></a
-            >
+            <span class="btn_span">아르카나 강화에 대해 알아보기</span>
           </div>
         </div>
         <div class="cont cont_08">
@@ -721,7 +96,7 @@
                     class="bgm"
                     src="./music/NPC_Iolar.mp3"
                     preload="none"
-                    loop=""
+                    loop
                   ></audio>
                 </div>
                 <div class="ctxt">
@@ -753,13 +128,7 @@
         </div>
         <div class="cont cont_09">
           <div class="mov_bg">
-            <video
-              src="./video/8.mp4"
-              autoplay=""
-              muted=""
-              loop=""
-              playsinline=""
-            ></video>
+            <video src="./video/8.mp4" autoplay muted loop playsinline></video>
           </div>
           <div class="txt"></div>
           <div class="deco deco1"></div>
@@ -772,55 +141,70 @@
               <a
                 data-fslightbox="fs2"
                 href="https://www.youtube.com/watch?v=OlkPb5KiW8w&amp;enablejsapi=1"
-                ><span class="btn_span"></span
-              ></a>
+              >
+                <span class="btn_span"></span>
+              </a>
             </li>
           </ul>
           <div class="btn_go_pop btn_go_pop1" data-pop-id="s9p1">
-            <a href="#"><span class="btn_span"></span></a>
+            <a href="#">
+              <span class="btn_span"></span>
+            </a>
           </div>
           <div class="btn_go_pop btn_go_pop2" data-pop-id="s9p2">
-            <a href="#"><span class="btn_span"></span></a>
+            <a href="#">
+              <span class="btn_span"></span>
+            </a>
           </div>
           <div class="btn_go_pop btn_go_pop3" data-pop-id="s9p3">
-            <a href="#"><span class="btn_span"></span></a>
+            <a href="#">
+              <span class="btn_span"></span>
+            </a>
           </div>
           <div class="btn_go_pop btn_go_pop4" data-pop-id="s9p4">
-            <a href="#"><span class="btn_span"></span></a>
+            <a href="#">
+              <span class="btn_span"></span>
+            </a>
           </div>
           <div class="btn_go_pop btn_go_pop5" data-pop-id="s9p5">
-            <a href="#"><span class="btn_span"></span></a>
+            <a href="#">
+              <span class="btn_span"></span>
+            </a>
           </div>
           <div class="btn_go_pop btn_go_pop6" data-pop-id="s9p6">
-            <a href="#"><span class="btn_span"></span></a>
+            <a href="#">
+              <span class="btn_span"></span>
+            </a>
           </div>
           <div class="btn_go_pop btn_go_pop7" data-pop-id="s9p7">
-            <a href="#"><span class="btn_span"></span></a>
+            <a href="#">
+              <span class="btn_span"></span>
+            </a>
           </div>
         </div>
         <div class="cont cont_10"></div>
         <div class="cont cont_11">
           <div class="btn_go btn_go1">
-            <a target="_blank" href="/page/news/notice_view.asp?id=4892421"
-              ><span class="btn_span">블록버STAR TOON 자세히 보기</span></a
-            >
+            <a target="_blank" href="">
+              <span class="btn_span">블록버STAR TOON 자세히 보기</span>
+            </a>
           </div>
           <div class="btn_go btn_go2">
-            <a target="_blank" href="/page/ucc/comic_list.asp?corner=1194"
-              ><span class="btn_span">웹툰 감상하러 가기</span></a
-            >
+            <a target="_blank" href="">
+              <span class="btn_span">웹툰 감상하러 가기</span>
+            </a>
           </div>
           <div class="btn_go btn_go3">
-            <a target="_blank" href="/page/ucc/comic_list.asp?corner=1195"
-              ><span class="btn_span">웹툰 감상하러 가기</span></a
-            >
+            <a target="_blank" href="">
+              <span class="btn_span">웹툰 감상하러 가기</span>
+            </a>
           </div>
         </div>
         <div class="cont cont_12">
           <div class="btn_go">
-            <a target="_blank" href="/page/news/event_view.asp?id=4892354"
-              ><span class="btn_span">초보를 위한 아르카나 달성 미션</span></a
-            >
+            <a target="_blank" href="">
+              <span class="btn_span">초보를 위한 아르카나 달성 미션</span>
+            </a>
           </div>
         </div>
         <div class="event_info_wrap">
@@ -2141,7 +1525,7 @@
 
       <div class="nav" style="display: none">
         <ul>
-          <li></li>
+          <li style="display: none"></li>
           <li></li>
         </ul>
         <div class="btn_go_main"></div>
@@ -2165,23 +1549,17 @@
               dir="ltr"
             >
               <div class="btn_start">
-                <a
-                  href="javascript:MabinogiGameStart();"
-                  data-a2s-code="start-click"
-                  ><span>GAME START</span></a
-                >
+                <a href="" data-a2s-code="start-click">
+                  <span>GAME START</span>
+                </a>
               </div>
               <div class="btn_home">
-                <a href="javascript:go_home();"
-                  ><span class="btn_span">공식 홈페이지 바로가기</span></a
-                >
+                <a href="">
+                  <span class="btn_span">공식 홈페이지 바로가기</span>
+                </a>
               </div>
               <div class="today_box">
-                <input
-                  id="today_check"
-                  type="checkbox"
-                  onclick="go_home_today();"
-                />
+                <input id="today_check" type="checkbox" />
                 <label for="today_check">
                   <span class="btn_span">오늘 하루 보지 않기</span>
                 </label>
@@ -2189,47 +1567,47 @@
               <!-- 해당 항목 활성화 on 클래스 추가 -->
               <ul class="btn_box ss">
                 <li class="open">
-                  <a href="/page/event/2024/1202_stars/index.asp"
-                    ><span class="btn_span">사전 이벤트</span></a
-                  >
+                  <a href="">
+                    <span class="btn_span">사전 이벤트</span>
+                  </a>
                 </li>
                 <li class="open on">
-                  <a href="/page/event/2024/1219_star1st/index.asp"
-                    ><span class="btn_span">블록버스타 1차 업데이트</span></a
-                  >
+                  <a href="">
+                    <span class="btn_span">블록버스타 1차 업데이트</span>
+                  </a>
                 </li>
                 <li class="open">
-                  <a href="/page/event/2025/0116_star2nd/index.asp"
-                    ><span class="btn_span">블록버스타 2차 업데이트</span></a
-                  >
+                  <a href="">
+                    <span class="btn_span">블록버스타 2차 업데이트</span>
+                  </a>
                 </li>
                 <li class="open">
-                  <a href="/page/news/event_view.asp?id=4892580"
-                    ><span class="btn_span">브리 레흐 최종장</span></a
-                  >
-                </li>
-              </ul>
-              <ul class="btn_box">
-                <li class="open">
-                  <a href="/page/event/2024/1219_burst/index.asp"
-                    ><span class="btn_txt">한겨울의 빛나는 도약</span></a
-                  >
+                  <a href="">
+                    <span class="btn_span">브리 레흐 최종장</span>
+                  </a>
                 </li>
               </ul>
               <ul class="btn_box">
                 <li class="open">
-                  <a href="/page/news/event_view.asp?id=4892513"
-                    ><span class="btn_txt">샤이의 PC방 샤이닝 시즌 2</span></a
-                  >
+                  <a href="">
+                    <span class="btn_txt">한겨울의 빛나는 도약</span>
+                  </a>
                 </li>
               </ul>
               <ul class="btn_box">
                 <li class="open">
-                  <a href="/page/event/2025/0116_pcbang/index.asp"
-                    ><span class="btn_txt"
+                  <a href="">
+                    <span class="btn_txt">샤이의 PC방 샤이닝 시즌 2</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="btn_box">
+                <li class="open">
+                  <a href="">
+                    <span class="btn_txt"
                       >마비노기와 함께하는 PC방 프로모션</span
-                    ></a
-                  >
+                    >
+                  </a>
                 </li>
               </ul>
             </div>
@@ -2256,128 +1634,24 @@
             </div>
           </div>
         </div>
-        <div
-          class="btn_toggle"
-          onclick="$('.side_nav').toggleClass('hide');return false"
-        >
-          <a href="#"><span class="btn_span">메뉴 열기/닫기</span></a>
+        <div class="btn_toggle">
+          <a href="#">
+            <span class="btn_span">메뉴 열기/닫기</span>
+          </a>
         </div>
       </div>
-      <!-- //사이드 메뉴 -->
-
-      <script
-        type="text/javascript"
-        src="https://ssl.nexon.com/s1/global/ngb_gamestart.js"
-      ></script>
-      <script
-        src="https://platform.nexon.com/common/platform.js"
-        type="text/javascript"
-      ></script>
-      <script
-        src="https://platform.nexon.com/ngm/js/NGMModuleInfo.js"
-        type="text/javascript"
-      ></script>
-      <script
-        src="https://platform.nexon.com/ngm/js/npf_ngm.js"
-        type="text/javascript"
-        charset="euc-kr"
-      ></script>
-      <script>
-        // 신규 게임스타트
-        function MabinogiGameStart() {
-          $h.a2s.sendClickLog("GAME_START", '{"MabiID":""}');
-
-          $.ajax({
-            url: "/page/common/gamestart.asp",
-            async: false,
-            type: "post",
-            dataType: "text",
-            data: {},
-            timeout: 30000,
-            success: function (data) {
-              if (data == "2") {
-                if (
-                  confirm(
-                    "로그인 후 이용 가능한 서비스 입니다. 로그인 하시겠습니까?"
-                  )
-                ) {
-                  location.href =
-                    "/page/member/login.asp?url=/page/event/2024/1219_star1st/index.asp";
-                  return false;
-                }
-              } else if (data == "3") {
-                alert("이메일ID로 로그인해주세요.");
-              } else if (data == "4") {
-                alert("게임중에 시작할 수 없습니다.");
-              } else if (data == "5") {
-                alert("마비노기ID로 다시 로그인해주세요.");
-                NgbLogin.Logout();
-              } else if (data == "6") {
-                alert("이메일ID로 다시 로그인해주세요.");
-                NgbLogin.Logout();
-              } else if (data == "7") {
-                alert("마비노기ID를 생성해주세요.");
-                location.href = "/page/main/index.asp";
-              } else if (data == "8") {
-                alert("제 3자 정보제공 동의 후 이용해주세요.");
-                location.href = "/page/main/index.asp";
-              } else {
-                NGM.LaunchGame("74245", data);
-                // 구글 ga
-                ga("send", "event", "게임시작", "버튼클릭", "메인 페이지");
-                // 페이스북 필셀
-                fbq("track", "Gamestart");
-                // 구글 스니펫
-                gtag_report_conversion();
-                // 페이스북 전환 추적
-                fbq("trackCustom", "CompleteRegistration_Btn");
-              }
-            },
-            error: function (xhr, textStatus, errorThrown) {
-              alert("오류 발생");
-            },
-          });
-        }
-
-        // Event snippet for 게임 실행 버튼 클릭
-        function gtag_report_conversion(url) {
-          var callback = function () {
-            if (typeof url != "undefined") {
-              window.location = url;
-            }
-          };
-
-          gtag("event", "conversion", {
-            send_to: "AW-940915063/IMApCMj8r4QBEPfy1MAD",
-            event_callback: callback,
-          });
-          return false;
-        }
-      </script>
-      <!-- //사이드 메뉴 -->
     </div>
 
     <div class="btn_go_top">
-      <a href="#Top"><span class="btn_span"></span></a>
+      <a href="#Top">
+        <span class="btn_span"></span>
+      </a>
     </div>
 
     <div class="pop_dimmed" style="display: none"></div>
 
     <div class="pop_mov" style="display: none">
       <div class="pop_close"></div>
-      <iframe
-        src="https://www.youtube.com/embed/-MCyST4yM7g"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen=""
-        data-gtm-yt-inspected-6="true"
-        id="446369414"
-        data-gtm-yt-inspected-20="true"
-        data-gtm-yt-inspected-11184324_280="true"
-        data-gtm-yt-inspected-286="true"
-      ></iframe>
     </div>
 
     <div class="pop_wrap">
@@ -2385,78 +1659,43 @@
       <div class="pop_box">
         <div class="pop s9p1">
           <div class="v v1">
-            <video
-              src="./video/1.mp4"
-              muted=""
-              loop=""
-              playsinline=""
-            ></video>
+            <video src="./video/1.mp4" muted loop playsinline autoplay></video>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p2">
           <div class="v v1">
-            <video
-              src="./video/2.mp4"
-              muted=""
-              loop=""
-              playsinline=""
-            ></video>
+            <video src="./video/2.mp4" muted loop playsinline autoplay></video>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p3">
           <div class="v v1">
-            <video
-              src="./video/3.mp4"
-              muted=""
-              loop=""
-              playsinline=""
-            ></video>
+            <video src="./video/3.mp4" muted loop playsinline autoplay></video>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p4">
           <div class="v v1">
-            <video
-              src="./video/4.mp4"
-              muted=""
-              loop=""
-              playsinline=""
-            ></video>
+            <video src="./video/4.mp4" muted loop playsinline autoplay></video>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p5">
           <div class="v v1">
-            <video
-              src="./video/5.mp4"
-              muted=""
-              loop=""
-              playsinline=""
-            ></video>
+            <video src="./video/5.mp4" muted loop playsinline autoplay></video>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p6">
           <div class="v v1">
-            <video
-              src="./video/6.mp4"
-              muted=""
-              loop=""
-              playsinline=""
-            ></video>
+            <video src="./video/6.mp4" muted loop playsinline autoplay></video>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p7">
           <div class="v v1">
-            <video
-              src="./video/7.mp4"
-              muted=""
-              loop=""
-              playsinline=""
-            ></video>
+            <video src="./video/7.mp4" muted loop playsinline autoplay></video>
           </div>
           <div class="pop_close"></div>
         </div>

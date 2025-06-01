@@ -189,7 +189,8 @@ span.btn_span {
     overflow: hidden
 }
 
-.cont_01 .intro .left,.cont_01 .intro .right {
+/* .cont_01 .intro .left, */
+.cont_01 .intro .right {
     position: absolute;
     top: 0;
     left: 50%;
@@ -199,7 +200,8 @@ span.btn_span {
     transition: margin-left .4s ease-in-out
 }
 
-.cont_01 .intro .left .frame,.cont_01 .intro .right .frame {
+/* .cont_01 .intro .left .frame, */
+.cont_01 .intro .right .frame {
     position: absolute;
     top: 0;
     left: 0;
@@ -207,14 +209,16 @@ span.btn_span {
     height: 100%
 }
 
-.cont_01 .intro .left .char,.cont_01 .intro .right .char {
+/* .cont_01 .intro .left .char, */
+.cont_01 .intro .right .char {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100%
 }
 
-.cont_01 .intro .left .title,.cont_01 .intro .right .title {
+/* .cont_01 .intro .left .title, */
+.cont_01 .intro .right .title {
     position: absolute;
     left: 50%;
     width: 612px;
@@ -222,7 +226,8 @@ span.btn_span {
     transition: margin-left .4s ease-in-out
 }
 
-.cont_01 .intro .left .title_over,.cont_01 .intro .right .title_over {
+/* .cont_01 .intro .left .title_over, */
+.cont_01 .intro .right .title_over {
     position: absolute;
     left: 50%;
     filter: blur(5px);
@@ -247,21 +252,21 @@ span.btn_span {
     opacity: 1 !important
 }
 
-.cont_01 .intro .left .frame {
+/* .cont_01 .intro .left .frame {
     background: url(../img/page/cont_01_left_bg.png) no-repeat 0 0
-}
+} */
 
-.cont_01 .intro .left .char {
+/* .cont_01 .intro .left .char {
     left: 0;
     background: url(../img/page/cont_01_left_char.png) no-repeat left bottom;
     transition: left .4s ease-in-out
-}
+} */
 
-.cont_01 .intro .left .char.breathe {
+/* .cont_01 .intro .left .char.breathe {
     animation: breathe1 2s infinite
-}
+} */
 
-@keyframes breathe1 {
+/* @keyframes breathe1 {
     0%,100% {
         bottom: 0px;
         margin-left: 0px
@@ -271,8 +276,8 @@ span.btn_span {
         bottom: -10px;
         margin-left: -5px
     }
-}
-
+} */
+/* 
 .cont_01 .intro .left .title {
     top: 378px;
     margin-left: -1000px;
@@ -297,7 +302,7 @@ span.btn_span {
 
 .cont_01 .intro .left.on .title {
     margin-left: -880px
-}
+} */
 
 .cont_01 .intro .right .frame {
     background: url(../img/page/cont_01_right_bg.png) no-repeat right 0
@@ -390,9 +395,9 @@ span.btn_span {
     cursor: pointer
 }
 
-.cont_01 .cbox .cbox_btn.left {
+/* .cont_01 .cbox .cbox_btn.left {
     left: 0
-}
+} */
 
 .cont_01 .cbox .cbox_btn.right {
     right: 0
