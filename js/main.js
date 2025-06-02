@@ -60,7 +60,7 @@ $(document).ready(() => {
         $('.tab.tab2').css('display', 'block');
         $('.nav').css('display', 'block');
         $('.nav ul li').addClass('on');
-        $('.wrap').css('height', '9661px');
+        $('.wrap').css('height', '6733px');
         window.scrollTo({
             top: 0,
         });
