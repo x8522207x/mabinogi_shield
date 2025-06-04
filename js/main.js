@@ -21,10 +21,12 @@ $(document).ready(() => {
 
     $(".btn_pop .btn_span").on("click", (event) => {
         event.preventDefault();
-        $('.pop_dimmed, .pop_mov').css('display', 'block');
+        $('.modal').removeClass('hide');
+        // $('.pop_dimmed, .pop_mov').css('display', 'block');
         $('html, body').css('overflow', 'hidden');
-        $('.pop_mov').append(
+        $('.modal_source').append(
             `<iframe
+                class="modal_youtube youtube--2"
                 src="https://www.youtube.com/embed/-MCyST4yM7g?enablejsapi=1&amp;autoplay=1&amp;mute=1"
                 title="YouTube video player"
                 frameborder="0"
@@ -40,10 +42,11 @@ $(document).ready(() => {
     });
     $('.btn_pop .btn_span').trigger('click');
 
-    $('.pop_mov .pop_close').on('click', () => {
-        $('.pop_dimmed, .pop_mov').css('display', 'none');
+    $('.modal_close').on('click', () => {
+        $('.modal').addClass('hide');
+        // $('.pop_dimmed, .pop_mov').css('display', 'none');
         $('html, body').css('overflow', 'visible');
-        $('.pop_mov')[0].children[1].remove();
+        $('.modal_source')[0].children[1].remove();
     });
 
     $('.cont_01 .cbox .cbox_btn.right').on('mouseenter', () => {
@@ -131,11 +134,6 @@ $(document).ready(() => {
         $('.pop_wrap').css('display', 'none');
         $('.pop').css('display', 'none');
     });
-
-    if ($(window).width() > 768) {
-    } else {
-
-    }
 });
 
 const openVideo = (video) => {

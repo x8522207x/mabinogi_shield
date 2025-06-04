@@ -1723,3 +1723,9 @@ span.btn_span {
     height: 780px;
     background: url(../img/page/cont_09_pop7.jpg) no-repeat center 72px
 }
+
+@media (max-width: 768px) {
+    .wrap {
+        min-width: unset;
+    }
+}

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=1390" />
+    <!-- <meta name="viewport" content="width=1390" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="blockbuSTAR 第1波改版" />
     <meta
       property="og:description"
@@ -24,6 +25,7 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/extra.css" defer />
     <link rel="stylesheet" type="text/css" href="css/main.css" defer />
     <link rel="stylesheet" type="text/css" href="css/menu.css" defer />
     <link rel="stylesheet" type="text/css" href="css/base.css" defer />
@@ -56,7 +58,7 @@
       <div class="cont cont_01">
         <div class="intro">
           <div class="right">
-            <div class="frame"></div>
+            <!-- <div class="frame"></div> -->
             <div class="char breathe"></div>
             <div class="title"></div>
             <div class="title_over"></div>
@@ -308,11 +310,42 @@
       </a>
     </div>
 
-    <div class="pop_dimmed" style="display: none"></div>
+    <!-- <div class="pop_dimmed" style="display: none"></div> -->
 
-    <div class="pop_mov" style="display: none">
-      <div class="pop_close"></div>
+    <div id="plate_modal">
+      <div class="modal type--youtube hide">
+        <div
+          class="modal_dimmed"
+          style="background-color: rgba(0, 0, 0, 0.8)"
+        ></div>
+        <div
+          class="modal_wrap"
+          style="
+            translate: none;
+            rotate: none;
+            scale: none;
+            transform: translate(0px, 0px);
+          "
+        >
+          <div class="modal_inner">
+            <div class="modal_box">
+              <div class="modal_box_theme"></div>
+              <div class="modal_source">
+                <span class="modal_source_ratio" style="padding-top: 56.4945%">
+                </span>
+              </div>
+            </div>
+            <button class="modal_close">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="toast_area"></div>
     </div>
+    <!-- <div class="pop_mov" style="display: none">
+      <div class="pop_close"></div>
+    </div> -->
 
     <div class="pop_wrap">
       <div class="pop_bg"></div>
