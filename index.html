@@ -25,8 +25,8 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/extra.css" defer />
     <link rel="stylesheet" type="text/css" href="css/main.css" defer />
+    <link rel="stylesheet" type="text/css" href="css/extra.css" defer />
     <link rel="stylesheet" type="text/css" href="css/menu.css" defer />
     <link rel="stylesheet" type="text/css" href="css/base.css" defer />
     <script
@@ -59,138 +59,209 @@
         <div class="intro">
           <div class="right">
             <!-- <div class="frame"></div> -->
-            <div class="char breathe"></div>
-            <div class="title"></div>
-            <div class="title_over"></div>
+            <div class="char breathe">
+              <div class="title"></div>
+            </div>
+            <!-- <div class="title_over"></div> -->
           </div>
           <div class="title"></div>
         </div>
         <div class="cbox">
           <div class="cbox_btn right"></div>
-          <div class="btn_pop">
+          <!-- <div class="btn_pop">
             <a href="#">
               <span class="btn_span">1ST UPDATE 영상</span>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
 
       <div class="tab tab2" style="display: none">
         <div class="cont cont_07">
-          <div class="btn_go btn_go1">
+          <!-- <div class="btn_go btn_go1">
             <span class="btn_span">아르카나란 무엇일까?</span>
           </div>
           <div class="btn_go btn_go2">
             <span class="btn_span">아르카나 강화에 대해 알아보기</span>
-          </div>
+          </div> -->
         </div>
         <div class="cont cont_08">
-          <div class="txt"></div>
-          <div class="btn_char btn_char4">
-            <div class="bg">
-              <div class="bbox">
-                <div class="vbox">
-                  <audio
-                    class="bgm"
-                    src="./music/NPC_Iolar.mp3"
-                    preload="none"
-                    loop
-                  ></audio>
-                </div>
-                <div class="ctxt">
-                  新的祕法適合者候選人。<br /><br />伊歐拉在法皇廳聖殿騎士團中，<br />以特別閃耀的虔誠信仰受到高度評價。<br /><br />原本以為她會遵循並侍奉愛之神萊米拉克的教誨，<br />過著信仰的生活，<br />然而新的命運正悄然降臨。<br /><br />法皇廳為何要將這位值得信賴的人才送往祕法協會呢？
-                </div>
-                <div class="bgm_info">
-                  <div class="visualizer">
-                    <div class="vvbox">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
+          <div class="textBox">
+            <div class="txt"></div>
+            <p class="description">
+              忠實追隨雷米斯神恩典之愛的伊歐拉。<br />她向全世界宣揚愛之神的恩惠。
+            </p>
+          </div>
+          <div>
+            <div class="btn_char btn_char4">
+              <div class="bg">
+                <div class="bbox">
+                  <div class="content">
+                    <div class="desc">海米斯教團的</div>
+                    <div class="title">伊歐拉</div>
+                    <div class="ctxt">
+                      新的祕法適合者候選人。<br /><br />伊歐拉在法皇廳聖殿騎士團中，<br />以特別閃耀的虔誠信仰受到高度評價。<br /><br />原本以為她會遵循並侍奉愛之神萊米拉克的教誨，<br />過著信仰的生活，<br />然而新的命運正悄然降臨。<br /><br />法皇廳為何要將這位值得信賴的人才送往祕法協會呢？
                     </div>
                   </div>
-                  <div class="txt">주 품에 나를 숨기소서</div>
+                  <div class="vbox">
+                    <audio
+                      class="bgm"
+                      src="./music/NPC_Iolar.mp3"
+                      preload="none"
+                      loop
+                    ></audio>
+                  </div>
+                  <div class="bgm_info">
+                    <div class="visualizer">
+                      <div class="vvbox">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="txt">주 품에 나를 숨기소서</div>
+                  </div>
                 </div>
+                <div class="btn_close"></div>
               </div>
-              <div class="btn_close"></div>
+              <div class="char"></div>
             </div>
-            <div class="char"></div>
+            <div class="char_txt">
+              <div class="char_title">
+                <div class="leftImg"></div>
+                <div class="char_fullName">
+                  聖盾守衛
+                  <span class="char_name">伊歐拉</span>
+                </div>
+                <div class="rightImg"></div>
+              </div>
+              <br />
+              <p class="char_saying">
+                你對雷米斯神的真言有興趣嗎？<br
+                  style="text-align: center"
+                /><br />又有一位弟兄獲得了對祂的覺悟，<br />真是令人無比欣喜。
+              </p>
+            </div>
           </div>
         </div>
         <div class="cont cont_09">
+          <div class="textBox">
+            <div class="txt"></div>
+            <p class="description">
+              以近戰才能為基礎，結合祝福才能的堅毅之盾！<br />是坦克定位的祕法天賦
+            </p>
+          </div>
           <div class="mov_bg">
             <video src="./video/8.mp4" autoplay muted loop playsinline></video>
           </div>
-          <div class="txt"></div>
+          <!-- <div class="txt"></div> -->
           <div class="deco deco1"></div>
           <div class="deco deco2"></div>
           <div class="deco deco3"></div>
           <div class="deco deco4"></div>
           <div class="deco deco5"></div>
-          <ul class="gallery">
-            <li>
-              <a
-                data-fslightbox="fs2"
-                href="https://www.youtube.com/watch?v=OlkPb5KiW8w&amp;enablejsapi=1"
-              >
+          <div class="gallery">
+            <!-- <li> -->
+            <a
+              data-fslightbox="fs2"
+              href="https://www.youtube.com/watch?v=OlkPb5KiW8w&amp;enablejsapi=1"
+            >
+              <span class="btn_span"></span>
+            </a>
+            <!-- </li> -->
+          </div>
+          <div class="skill_title">
+            <div class="leftImg"></div>
+            <p>專用技能</p>
+            <div class="rightImg"></div>
+          </div>
+          <div class="skills_set">
+            <div class="btn_go_pop btn_go_pop1" data-pop-id="s9p1">
+              <a href="#">
                 <span class="btn_span"></span>
               </a>
-            </li>
-          </ul>
-          <div class="btn_go_pop btn_go_pop1" data-pop-id="s9p1">
-            <a href="#">
-              <span class="btn_span"></span>
-            </a>
+            </div>
+            <div class="btn_go_pop btn_go_pop2" data-pop-id="s9p2">
+              <a href="#">
+                <span class="btn_span"></span>
+              </a>
+            </div>
+            <div class="btn_go_pop btn_go_pop3" data-pop-id="s9p3">
+              <a href="#">
+                <span class="btn_span"></span>
+              </a>
+            </div>
+            <div class="btn_go_pop btn_go_pop4" data-pop-id="s9p4">
+              <a href="#">
+                <span class="btn_span"></span>
+              </a>
+            </div>
+            <div class="btn_go_pop btn_go_pop5" data-pop-id="s9p5">
+              <a href="#">
+                <span class="btn_span"></span>
+              </a>
+            </div>
+            <div class="btn_go_pop btn_go_pop6" data-pop-id="s9p6">
+              <a href="#">
+                <span class="btn_span"></span>
+              </a>
+            </div>
+            <div class="btn_go_pop btn_go_pop7" data-pop-id="s9p7">
+              <a href="#">
+                <span class="btn_span"></span>
+              </a>
+            </div>
           </div>
-          <div class="btn_go_pop btn_go_pop2" data-pop-id="s9p2">
-            <a href="#">
-              <span class="btn_span"></span>
-            </a>
-          </div>
-          <div class="btn_go_pop btn_go_pop3" data-pop-id="s9p3">
-            <a href="#">
-              <span class="btn_span"></span>
-            </a>
-          </div>
-          <div class="btn_go_pop btn_go_pop4" data-pop-id="s9p4">
-            <a href="#">
-              <span class="btn_span"></span>
-            </a>
-          </div>
-          <div class="btn_go_pop btn_go_pop5" data-pop-id="s9p5">
-            <a href="#">
-              <span class="btn_span"></span>
-            </a>
-          </div>
-          <div class="btn_go_pop btn_go_pop6" data-pop-id="s9p6">
-            <a href="#">
-              <span class="btn_span"></span>
-            </a>
-          </div>
-          <div class="btn_go_pop btn_go_pop7" data-pop-id="s9p7">
-            <a href="#">
-              <span class="btn_span"></span>
-            </a>
+          <div class="level_block">
+            <div class="level_title">
+              <div class="leftImg"></div>
+              <p>等級開放</p>
+              <div class="rightImg"></div>
+            </div>
+            <br />
+            <div class="level_desc">僅說明升級時新增或變更的效果</div>
+            <div class="level_table"></div>
           </div>
         </div>
-        <div class="cont cont_10"></div>
-        <div class="cont cont_12">
+        <div class="cont cont_10">
+          <div class="textBox">
+            <div class="txt"></div>
+            <p class="description">
+              祕法綜合等級所對應的能力值上限解鎖效果，<br />已新增至200等級。
+            </p>
+          </div>
+          <div class="content"></div>
           <div class="btn_go">
-            <a target="_blank" href="">
+            <a
+              target="_blank"
+              href="https://mabinogi.nexon.com/page/news/event_view.asp?id=4892354 "
+            >
               <span class="btn_span"></span>
             </a>
           </div>
         </div>
+        <!-- <div class="cont cont_12">
+          <div class="btn_go">
+            <a
+              target="_blank"
+              href="https://mabinogi.nexon.com/page/news/event_view.asp?id=4892354 "
+            >
+              <span class="btn_span"></span>
+            </a>
+          </div>
+        </div> -->
       </div>
 
       <div class="nav" style="display: none">
-        <ul>
+        <!-- <ul>
           <li style="display: none"></li>
           <li></li>
-        </ul>
+        </ul> -->
         <div class="btn_go_main"></div>
+        <div class="tab2_btn"></div>
       </div>
       <!-- // Contents End -->
       <div id="sideNav" class="side_nav">
@@ -220,20 +291,20 @@
                   <span class="btn_span">공식 홈페이지 바로가기</span>
                 </a>
               </div>
-              <div class="today_box">
+              <!-- <div class="today_box">
                 <input id="today_check" type="checkbox" />
                 <label for="today_check">
                   <span class="btn_span">오늘 하루 보지 않기</span>
                 </label>
-              </div>
+              </div> -->
               <!-- 해당 항목 활성화 on 클래스 추가 -->
               <ul class="btn_box ss">
-                <li class="open">
+                <li class="open on">
                   <a href="">
                     <span class="btn_span">사전 이벤트</span>
                   </a>
                 </li>
-                <li class="open on">
+                <li class="open">
                   <a href="">
                     <span class="btn_span">블록버스타 1차 업데이트</span>
                   </a>
@@ -249,21 +320,21 @@
                   </a>
                 </li>
               </ul>
-              <ul class="btn_box">
+              <!-- <ul class="btn_box">
                 <li class="open">
                   <a href="">
                     <span class="btn_txt">한겨울의 빛나는 도약</span>
                   </a>
                 </li>
-              </ul>
-              <ul class="btn_box">
+              </ul> -->
+              <!-- <ul class="btn_box">
                 <li class="open">
                   <a href="">
                     <span class="btn_txt">샤이의 PC방 샤이닝 시즌 2</span>
                   </a>
                 </li>
-              </ul>
-              <ul class="btn_box">
+              </ul> -->
+              <!-- <ul class="btn_box">
                 <li class="open">
                   <a href="">
                     <span class="btn_txt"
@@ -271,7 +342,7 @@
                     >
                   </a>
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
           <div
@@ -312,7 +383,7 @@
 
     <!-- <div class="pop_dimmed" style="display: none"></div> -->
 
-    <div id="plate_modal">
+    <!-- <div id="plate_modal">
       <div class="modal type--youtube hide">
         <div
           class="modal_dimmed"
@@ -342,7 +413,7 @@
         </div>
       </div>
       <div id="toast_area"></div>
-    </div>
+    </div> -->
     <!-- <div class="pop_mov" style="display: none">
       <div class="pop_close"></div>
     </div> -->
@@ -351,44 +422,295 @@
       <div class="pop_bg"></div>
       <div class="pop_box">
         <div class="pop s9p1">
-          <div class="v v1">
-            <video src="./video/1.mp4" muted loop playsinline autoplay></video>
+          <div class="skill_area">
+            <div class="title">聖域展開</div>
+            <div class="desc">這戰場宣告由「聖盾守衛」成為主宰的領域。</div>
+            <div class="content">
+              <div class="subContent">
+                <div class="subTitle_block">
+                  <div class="leftImg"></div>
+                  <div class="subTitle">使用方法</div>
+                  <div class="rightImg"></div>
+                </div>
+                <div class="subDesc">
+                  施展後會立刻揮下盾牌，
+                  <br />
+                  對周圍敵人造成與防禦力成比例的傷害。
+                  <br /><br />
+                  同時使戰場上的敵人，
+                  <br />
+                  在一段時間內將視線集中在自己身上。
+                  <br /><br />
+                  由於巨大的存在感，
+                  <br />
+                  即使受到其他干擾，被奪走的視線也不會轉移。
+                  <br />
+                  對這位聖域的主人的攻擊，
+                  <br />
+                  不會使其陷入硬直或倒地狀態。
+                </div>
+              </div>
+              <div class="v v1">
+                <video
+                  src="./video/1.mp4"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                ></video>
+              </div>
+            </div>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p2">
-          <div class="v v1">
-            <video src="./video/2.mp4" muted loop playsinline autoplay></video>
+          <div class="skill_area">
+            <div class="title">零秒嘲諷</div>
+            <div class="desc">任何敵人都不敢在聖盾守衛的領域內分心。</div>
+            <div class="content">
+              <div class="subContent">
+                <div class="subTitle_block">
+                  <div class="leftImg"></div>
+                  <div class="subTitle">使用方法</div>
+                  <div class="rightImg"></div>
+                </div>
+                <div class="subDesc">
+                  指定一個區域，
+                  <br />
+                  對該區域內的敵人造成與自身防禦力成比例的攻擊。
+                  <br /><br />
+                  此時，
+                  <br />
+                  受到攻擊的敵人會瞬間被吸引視線，
+                  <br />
+                  將注意力集中到施術者身上。
+                  <br />
+                  <br />
+                  <div class="hint">
+                    * 只能在技能「聖域展開」的影響範圍內
+                    <br />
+                    指定要攻擊的區域。
+                  </div>
+                </div>
+              </div>
+              <div class="v v1">
+                <video
+                  src="./video/2.mp4"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                ></video>
+              </div>
+            </div>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p3">
-          <div class="v v1">
-            <video src="./video/3.mp4" muted loop playsinline autoplay></video>
+          <div class="skill_area">
+            <div class="title">榮光獻祭</div>
+            <div class="desc">
+              最先站出的犧牲者，將守護這片戰場上的所有夥伴。
+            </div>
+            <div class="content">
+              <div class="subContent">
+                <div class="subTitle_block">
+                  <div class="leftImg"></div>
+                  <div class="subTitle">使用方法</div>
+                  <div class="rightImg"></div>
+                </div>
+                <div class="subDesc">
+                  對聚集在施法者周圍的友軍施放高潔的犧牲。
+                  <br /><br />
+                  之後，
+                  <br />
+                  當戰鬥中的友軍受到攻擊時，
+                  <br />
+                  其部分傷害會傳遞給施法者，
+                  <br />
+                  但不是一次性傳遞，
+                  <br />
+                  而是分散持續地接收。
+                  <br /><br />
+                  <div class="hint">
+                    * 只能在技能「聖域展開」的影響範圍內
+                    <br />
+                    指定要攻擊的區域。
+                  </div>
+                </div>
+              </div>
+              <div class="v v1">
+                <video
+                  src="./video/3.mp4"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                ></video>
+              </div>
+            </div>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p4">
-          <div class="v v1">
-            <video src="./video/4.mp4" muted loop playsinline autoplay></video>
+          <div class="skill_area">
+            <div class="title">盾擊衝鋒</div>
+            <div class="desc">蜂擁而至的盾牌如同撞上巨大壁壘般，令人畏懼。</div>
+            <div class="content">
+              <div class="subContent">
+                <div class="subTitle_block">
+                  <div class="leftImg"></div>
+                  <div class="subTitle">使用方法</div>
+                  <div class="rightImg"></div>
+                </div>
+                <div class="subDesc">
+                  瞬間移動到一定距離外敵人前方，
+                  <br />
+                  並用手中的盾牌猛烈推擊。
+                  <br /><br />
+                  範圍內被攻擊的敵人會被推向盾牌前方，
+                  <br />
+                  慘遭摔倒。
+                  <br />
+                  若未倒地，則會短暫僵直。
+                  <br /><br />
+                  <div class="hint">* 衝突傷害會受到攻擊力和防禦力的影響</div>
+                </div>
+              </div>
+              <div class="v v1">
+                <video
+                  src="./video/4.mp4"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                ></video>
+              </div>
+            </div>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p5">
-          <div class="v v1">
-            <video src="./video/5.mp4" muted loop playsinline autoplay></video>
+          <div class="skill_area">
+            <div class="title">盾崩強襲</div>
+            <div class="desc">以強勁的臂力揮舞的盾牌，瞬間擊潰敵人的士氣。</div>
+            <div class="content">
+              <div class="subContent">
+                <div class="subTitle_block">
+                  <div class="leftImg"></div>
+                  <div class="subTitle">使用方法</div>
+                  <div class="rightImg"></div>
+                </div>
+                <div class="subDesc">
+                  對施法者前方一定範圍內的敵人揮動盾牌進行攻擊。
+                  <br /><br />
+                  被盾牌擊中的敵人，
+                  <br />
+                  防禦、魔法防禦、保護、魔法保護會減少。
+                  <br /><br />
+                  被多次擊中時，
+                  <br />
+                  效果會成倍增強。
+                  <br /><br />
+                  <div class="hint">* 衝突傷害會受到攻擊力和防禦力的影響</div>
+                </div>
+              </div>
+              <div class="v v1">
+                <video
+                  src="./video/5.mp4"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                ></video>
+              </div>
+            </div>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p6">
-          <div class="v v1">
-            <video src="./video/6.mp4" muted loop playsinline autoplay></video>
+          <div class="skill_area">
+            <div class="title">審判之盾</div>
+            <div class="desc">站在這面盾牌前的敵人，只能迎接慘烈的審判。</div>
+            <div class="content">
+              <div class="subContent">
+                <div class="subTitle_block">
+                  <div class="leftImg"></div>
+                  <div class="subTitle">使用方法</div>
+                  <div class="rightImg"></div>
+                </div>
+                <div class="subDesc">
+                  用盾牌猛力砸下，
+                  <br />
+                  對施法者周圍一定範圍內的敵人造成打擊，
+                  <br />
+                  被擊中的敵人移動速度會在短時間內減少。
+                  <br /><br />
+                  <div class="hint">
+                    * 旋風擺蓮腿的傷害會受到攻擊力和防禦力的影響。
+                    <br />
+                    * 旋風擺蓮腿的範圍會根據技能的範圍大小<br />而影響作用範圍。
+                    <br />
+                    * 如果先被「鐵壁強打」命中，<br />則根據被命中次數，傷害會增加。
+                  </div>
+                </div>
+              </div>
+              <div class="v v1">
+                <video
+                  src="./video/6.mp4"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                ></video>
+              </div>
+            </div>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p7">
-          <div class="v v1">
-            <video src="./video/7.mp4" muted loop playsinline autoplay></video>
+          <div class="skill_area">
+            <div class="title">犧牲的懲罰</div>
+            <div class="desc">
+              橫掃戰場的聖盾守衛氣勢，使所有敵人都感到畏懼。
+            </div>
+            <div class="content">
+              <div class="subContent">
+                <div class="subTitle_block">
+                  <div class="leftImg"></div>
+                  <div class="subTitle">使用方法</div>
+                  <div class="rightImg"></div>
+                </div>
+                <div class="subDesc">
+                  技能施放瞬間，
+                  <br />
+                  周圍敵人會被僵直。
+                  <br /><br />
+                  同時，
+                  <br />
+                  榮光獻祭技能所造成的持續傷害效果暫停，
+                  <br />
+                  並根據因榮光獻祭而累積的隊友所受傷害數值，
+                  <br />
+                  對敵人造成相應的傷害。
+                  <br /><br />
+                  <div class="hint">
+                    * 受榮光獻祭所獲得的犧牲數值和防禦力影響。
+                    <br />
+                    * 持續時間會受到魔法護盾持續時間的影響。
+                  </div>
+                </div>
+              </div>
+              <div class="v v1">
+                <video
+                  src="./video/7.mp4"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                ></video>
+              </div>
+            </div>
           </div>
           <div class="pop_close"></div>
         </div>
