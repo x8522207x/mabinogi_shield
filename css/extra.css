@@ -1,0 +1,434 @@
+@media (max-width: 1280px) and (min-width: 769px) {
+  .cont_01 .intro>.title {
+    width: 779px;
+    height: 260px;
+    top: 110px;
+  }
+
+  .wrap .cont.cont_08 {
+    height: 1330px;
+  }
+
+  .cont_08 .btn_char .bg {
+    left: 0px;
+    top: unset;
+  }
+
+  .cont_08 .btn_char4 {
+    top: unset;
+    left: 0;
+    /* margin-left: 0px; */
+    width: 150px;
+    height: 390px;
+  }
+
+  .cont_08 .btn_char4 .char {
+    width: 150px;
+    height: 390px;
+  }
+
+  .cont_08 .btn_char4:not(.on):hover .char:before {
+    background-image: unset;
+  }
+
+  .cont_08 .btn_char4.on .char:before {
+    left: -250px;
+    width: 250px;
+    height: 125px;
+  }
+
+  .cont_08 .btn_char4 .bg {
+    background-image: url(../img/page/m_cont_08_btn1_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 730 / 1089;
+    height: unset;
+  }
+
+  .cont_08 .btn_char .bg .bbox {
+    width: 769px;
+    aspect-ratio: 730 / 1089;
+    padding-left: 200px;
+    padding-top: 30px;
+    padding-right: 0px;
+  }
+
+  .cont_08 .btn_char .bg .bbox .content {
+    margin-top: 50px;
+    width: 520px;
+    height: 550px;
+  }
+
+  .cont_08 .btn_char .bg .bbox .ctxt {
+    margin-top: 40px;
+  }
+
+  .bgm_info {
+    top: 1099px;
+    left: 0px;
+  }
+
+  .cont_08 .btn_char .bg .m_btn_close {
+    transform: rotate(270deg);
+    position: absolute;
+    z-index: 2;
+    top: -370px;
+    left: 370px;
+    transform-origin: center center;
+    right: unset;
+    height: 769px;
+    width: 26px;
+    background-image: url(../img/page/cont_04_btn_bg_close.png);
+    background-repeat: no-repeat;
+    background-color: rgb(29, 194, 255);
+    background-position: center;
+    box-shadow: -10px 0px 30px rgba(0, 0, 0, .7);
+    cursor: pointer;
+  }
+
+  .cont_08 .char_txt {
+    margin-left: -150px;
+    top: 980px;
+  }
+
+  .cont_08>.textBox>.txt {
+    width: 299px;
+    height: 115px;
+    background-size: cover;
+  }
+
+  .cont_09>.textBox>.txt {
+    width: 207px;
+    height: 153px;
+    background-size: cover;
+  }
+
+  .cont_09 .skills_set {
+    top: 980px;
+    position: absolute;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .cont_09 .btn_go_pop {
+    margin-left: 0px;
+    position: unset;
+    width: 105px;
+    height: 105px;
+  }
+
+  .cont_09 .level_block .level_table {
+    width: 100vw;
+    height: unset;
+    aspect-ratio: 400 / 407;
+  }
+
+  .cont_10>.textBox>.txt {
+    width: 285px;
+    height: 111px;
+    background-size: cover;
+  }
+
+  .cont_10 .content {
+    width: 100vw;
+    aspect-ratio: 982 / 453;
+    height: unset;
+  }
+
+  .pop_wrap .pop_box .pop {
+    width: 100vw;
+    height: 1100px;
+    background-size: cover;
+  }
+
+  .pop_wrap .pop_box .pop .v {
+    width: 100vw;
+    aspect-ratio: 468 / 369;
+    height: unset;
+  }
+
+  .pop_wrap .pop_box .pop .v video {
+    margin-left: 0px;
+  }
+
+  .pop_wrap .pop_box .pop .skill_area .subContent {
+    width: 100vw;
+    height: 500px;
+  }
+
+  .pop_wrap .pop_box .pop .skill_area .content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .cont_01 .intro>.title {
+    width: 430px;
+    height: 87.5px;
+    top: 110px;
+  }
+
+  .cont_01 .intro .right {
+    width: 100vw;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cont_01 .intro .right .char {
+    background-size: cover;
+    background-position: 50% 50%;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .cont_01 .intro .right .char {
+    width: 996px;
+    height: 450px;
+  }
+
+  .cont_01 .intro .right .char .title {
+    transform: translateX(-5%) translateY(-15%);
+  }
+
+  .cont_01 .cbox .cbox_btn.right {
+    width: 100vw;
+    height: 450px;
+  }
+
+  .nav {
+    height: 205px;
+  }
+
+  .nav .btn_go_main {
+    width: 162px;
+    height: 119px;
+  }
+
+  .nav .tab2_btn {
+    position: relative;
+    margin-left: calc(100vw - 100px);
+    width: 126px;
+    height: 47px;
+  }
+
+  .wrap .cont.cont_07 {
+    height: 201px;
+    background-image: url(../img/page/cont_07.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .wrap .cont.cont_08 {
+    margin-top: 30px;
+    height: 880px;
+  }
+
+  .cont_08>.textBox>.description,
+  .cont_09>.textBox>.description,
+  .cont_08 .char_txt .char_saying,
+  .cont_09 .level_block .level_desc {
+    font-size: 17px;
+  }
+
+  .cont_10>.textBox>.description {
+    font-size: 19px;
+  }
+
+  .cont_08 .char_txt .char_title .char_fullName {
+    font-size: 24px;
+  }
+
+  .cont_09 .skill_title p,
+  .cont_09 .level_title p {
+    font-size: 34px;
+  }
+
+  .cont_08 .char_txt .char_title .char_fullName .char_name {
+    font-size: 44px;
+  }
+
+  .cont_08 .btn_char .bg {
+    left: 0px;
+    top: unset;
+  }
+
+  .cont_08 .btn_char4 {
+    top: unset;
+    left: 0;
+    /* margin-left: 0px; */
+    width: 150px;
+    height: 390px;
+  }
+
+  .cont_08 .btn_char4 .char {
+    width: 150px;
+    height: 390px;
+  }
+
+  .cont_08 .btn_char4:not(.on):hover .char:before {
+    background-image: unset;
+  }
+
+  .cont_08 .btn_char4.on .char:before {
+    left: -250px;
+    width: 250px;
+    height: 125px;
+  }
+
+  .cont_08 .btn_char4 .bg {
+    background-image: url(../img/page/m_cont_08_btn1_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    aspect-ratio: 730 / 1089;
+    height: unset;
+  }
+
+  .cont_08 .btn_char .bg .bbox {
+    width: 375px;
+    aspect-ratio: 730 / 1089;
+    padding-left: 150px;
+    padding-top: 30px;
+    padding-right: 0px;
+  }
+
+  .cont_08 .btn_char .bg .bbox .content {
+    width: 225px;
+    height: 290px;
+  }
+
+  .bgm_info {
+    top: 511px;
+    left: 0px;
+  }
+
+  .cont_08 .btn_char .bg .bbox .desc {
+    font-size: 30px;
+  }
+
+  .cont_08 .btn_char .bg .bbox .title {
+    font-size: 50px;
+  }
+
+  .cont_08 .btn_char .bg .bbox .ctxt {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .cont_08 .btn_char .bg .m_btn_close {
+    transform: rotate(270deg);
+    position: absolute;
+    z-index: 2;
+    top: -175px;
+    left: 175px;
+    transform-origin: center center;
+    right: unset;
+    height: 375px;
+    width: 26px;
+    background-image: url(../img/page/cont_04_btn_bg_close.png);
+    background-repeat: no-repeat;
+    background-color: rgb(29, 194, 255);
+    background-position: center;
+    box-shadow: -10px 0px 30px rgba(0, 0, 0, .7);
+    cursor: pointer;
+  }
+
+  .cont_08 .char_txt {
+    margin-left: -200px;
+    top: 660px;
+  }
+
+  .cont_08>.textBox>.txt {
+    width: 299px;
+    height: 115px;
+    background-size: cover;
+  }
+
+  .cont_09 .mov_bg {
+    top: -680px;
+  }
+
+  .cont_09 .gallery {
+    top: unset;
+    margin-top: 30px;
+    width: 100vw;
+    aspect-ratio: 909 / 388;
+    height: unset;
+  }
+
+  .cont_09 .skill_title {
+    top: 665px;
+  }
+
+  .cont_09 .skills_set {
+    top: 780px;
+    position: absolute;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .cont_09 .btn_go_pop {
+    margin-left: 0px;
+    position: unset;
+    width: 70px;
+    height: 70px;
+  }
+
+  .cont_09 .level_block {
+    top: 980px;
+  }
+
+  .cont_09 .level_block .level_table {
+    width: 100vw;
+    height: unset;
+    aspect-ratio: 400 / 407;
+  }
+
+  .cont_09>.textBox>.txt {
+    width: 207px;
+    height: 153px;
+    background-size: cover;
+  }
+
+  .cont_10 .content {
+    width: 100vw;
+    aspect-ratio: 982 / 453;
+    height: unset;
+  }
+
+  .cont_10>.textBox>.txt {
+    width: 285px;
+    height: 111px;
+    background-size: cover;
+  }
+
+  .pop_wrap .pop_box .pop {
+    width: 100vw;
+    height: 1100px;
+    background-size: cover;
+  }
+
+  .pop_wrap .pop_box .pop .v {
+    width: 100vw;
+    aspect-ratio: 468 / 369;
+    height: unset;
+  }
+
+  .pop_wrap .pop_box .pop .v video {
+    margin-left: 0px;
+  }
+
+  .pop_wrap .pop_box .pop .skill_area .subContent {
+    width: 100vw;
+    height: 500px;
+  }
+
+  .pop_wrap .pop_box .pop .skill_area .content {
+    flex-direction: column;
+  }
+}

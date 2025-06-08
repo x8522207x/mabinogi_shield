@@ -3,23 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="666" />
-    <meta property="og:image:height" content="364" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="blockbuSTAR 第1波改版" />
     <meta
       property="og:description"
       content="新瑪奇G27 安樂之庭更新！守護戰場的盾牌——全新祕法聖盾守衛登場！"
     />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>blockbuSTAR 第1波改版</title>
-    <!-- <link
-      rel="mask-icon"
-      href="img/icon/safari-pinned-tab.svg"
-      color="#162c32"
-    />
-    <link rel="shortcut icon" href="img/icon/favicon.ico" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,6 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css" defer />
+    <link rel="stylesheet" type="text/css" href="css/extra.css" defer />
     <link rel="stylesheet" type="text/css" href="css/menu.css" defer />
     <link rel="stylesheet" type="text/css" href="css/base.css" defer />
     <script
@@ -39,11 +30,11 @@
       theme="dark"
       defer
     ></script>
-    <!-- <script
+    <script
       type="text/javascript"
       src="https://tw.beanfun.com/js/GA_CodeNew.js"
       defer
-    ></script> -->
+    ></script>
     <script src="js/fslightbox.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
@@ -60,1475 +51,180 @@
       <div class="cont cont_01">
         <div class="intro">
           <div class="right">
-            <div class="frame"></div>
-            <div class="char breathe"></div>
-            <div class="title"></div>
-            <div class="title_over"></div>
+            <div class="char breathe">
+              <div class="title"></div>
+            </div>
           </div>
           <div class="title"></div>
         </div>
         <div class="cbox">
           <div class="cbox_btn right"></div>
-          <div class="btn_pop">
-            <a href="#">
-              <span class="btn_span">1ST UPDATE 영상</span>
-            </a>
-          </div>
         </div>
       </div>
 
       <div class="tab tab2" style="display: none">
-        <div class="cont cont_07">
-          <div class="btn_go btn_go1">
-            <span class="btn_span">아르카나란 무엇일까?</span>
-          </div>
-          <div class="btn_go btn_go2">
-            <span class="btn_span">아르카나 강화에 대해 알아보기</span>
-          </div>
-        </div>
+        <div class="cont cont_07"></div>
         <div class="cont cont_08">
-          <div class="txt"></div>
-          <div class="btn_char btn_char4">
-            <div class="bg">
-              <div class="bbox">
-                <div class="vbox">
-                  <audio
-                    class="bgm"
-                    src="./music/NPC_Iolar.mp3"
-                    preload="none"
-                    loop
-                  ></audio>
-                </div>
-                <div class="ctxt">
-                  새로운 아르카나 적합자 후보.<br /><br />이올라는 법황청 성전
-                  기사단에서도 특히 빛나는<br />신앙심으로 높게
-                  평가받았습니다.<br /><br />그렇게 사랑의 신 라이미라크의
-                  말씀을 따르고<br />섬기는, 신앙의 삶을 살리라 생각했던
-                  그녀에게<br />새로운 운명이 다가왔습니다.<br /><br />법황청에서
-                  이 믿음직한 인재를 아르카나 협회에 보낸 이유는 무엇일까요?
-                </div>
-                <div class="bgm_info">
-                  <div class="visualizer">
-                    <div class="vvbox">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
+          <div class="textBox">
+            <div class="txt"></div>
+            <p class="description">
+              忠實追隨雷米斯神恩典之愛的伊歐拉。<br />她向全世界宣揚愛之神的恩惠。
+            </p>
+          </div>
+          <div>
+            <div class="btn_char btn_char4">
+              <div class="bg">
+                <div class="m_btn_close"></div>
+                <div class="bbox">
+                  <div class="content">
+                    <div class="desc">海米斯教團的</div>
+                    <div class="title">伊歐拉</div>
+                    <div class="ctxt">
+                      新的祕法適合者候選人。<br /><br />伊歐拉在法皇廳聖殿騎士團中，<br />以特別閃耀的虔誠信仰受到高度評價。<br /><br />原本以為她會遵循並侍奉愛之神萊米拉克的教誨，<br />過著信仰的生活，<br />然而新的命運正悄然降臨。<br /><br />法皇廳為何要將這位值得信賴的人才送往祕法協會呢？
                     </div>
                   </div>
-                  <div class="txt">주 품에 나를 숨기소서</div>
+                  <div class="vbox">
+                    <audio
+                      class="bgm"
+                      src="./music/NPC_Iolar.mp3"
+                      preload="none"
+                      loop
+                    ></audio>
+                  </div>
+                  <div class="bgm_info">
+                    <div class="visualizer">
+                      <div class="vvbox">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="txt">주 품에 나를 숨기소서</div>
+                  </div>
                 </div>
+                <div class="btn_close"></div>
               </div>
-              <div class="btn_close"></div>
+              <div class="char"></div>
             </div>
-            <div class="char"></div>
+            <div class="char_txt">
+              <div class="char_title">
+                <div class="leftImg"></div>
+                <div class="char_fullName">
+                  聖盾守衛
+                  <span class="char_name">伊歐拉</span>
+                </div>
+                <div class="rightImg"></div>
+              </div>
+              <br />
+              <p class="char_saying">
+                你對雷米斯神的真言有興趣嗎？<br
+                  style="text-align: center"
+                /><br />又有一位弟兄獲得了對祂的覺悟，<br />真是令人無比欣喜。
+              </p>
+            </div>
           </div>
         </div>
         <div class="cont cont_09">
+          <div class="textBox">
+            <div class="txt"></div>
+            <p class="description">
+              以近戰才能為基礎，結合祝福才能的堅毅之盾！<br />是坦克定位的祕法天賦
+            </p>
+          </div>
           <div class="mov_bg">
             <video src="./video/8.mp4" autoplay muted loop playsinline></video>
           </div>
-          <div class="txt"></div>
           <div class="deco deco1"></div>
           <div class="deco deco2"></div>
           <div class="deco deco3"></div>
           <div class="deco deco4"></div>
           <div class="deco deco5"></div>
-          <ul class="gallery">
-            <li>
-              <a
-                data-fslightbox="fs2"
-                href="https://www.youtube.com/watch?v=OlkPb5KiW8w&amp;enablejsapi=1"
-              >
+          <div class="gallery">
+            <a
+              data-fslightbox="fs2"
+              href="https://www.youtube.com/watch?v=OlkPb5KiW8w&amp;enablejsapi=1"
+            >
+              <span class="btn_span"></span>
+            </a>
+          </div>
+          <div class="skill_title">
+            <div class="leftImg"></div>
+            <p>專用技能</p>
+            <div class="rightImg"></div>
+          </div>
+          <div class="skills_set">
+            <div class="btn_go_pop btn_go_pop1" data-pop-id="s9p1">
+              <a href="#">
                 <span class="btn_span"></span>
               </a>
-            </li>
-          </ul>
-          <div class="btn_go_pop btn_go_pop1" data-pop-id="s9p1">
-            <a href="#">
-              <span class="btn_span"></span>
-            </a>
+            </div>
+            <div class="btn_go_pop btn_go_pop2" data-pop-id="s9p2">
+              <a href="#">
+                <span class="btn_span"></span>
+              </a>
+            </div>
+            <div class="btn_go_pop btn_go_pop3" data-pop-id="s9p3">
+              <a href="#">
+                <span class="btn_span"></span>
+              </a>
+            </div>
+            <div class="btn_go_pop btn_go_pop4" data-pop-id="s9p4">
+              <a href="#">
+                <span class="btn_span"></span>
+              </a>
+            </div>
+            <div class="btn_go_pop btn_go_pop5" data-pop-id="s9p5">
+              <a href="#">
+                <span class="btn_span"></span>
+              </a>
+            </div>
+            <div class="btn_go_pop btn_go_pop6" data-pop-id="s9p6">
+              <a href="#">
+                <span class="btn_span"></span>
+              </a>
+            </div>
+            <div class="btn_go_pop btn_go_pop7" data-pop-id="s9p7">
+              <a href="#">
+                <span class="btn_span"></span>
+              </a>
+            </div>
           </div>
-          <div class="btn_go_pop btn_go_pop2" data-pop-id="s9p2">
-            <a href="#">
-              <span class="btn_span"></span>
-            </a>
-          </div>
-          <div class="btn_go_pop btn_go_pop3" data-pop-id="s9p3">
-            <a href="#">
-              <span class="btn_span"></span>
-            </a>
-          </div>
-          <div class="btn_go_pop btn_go_pop4" data-pop-id="s9p4">
-            <a href="#">
-              <span class="btn_span"></span>
-            </a>
-          </div>
-          <div class="btn_go_pop btn_go_pop5" data-pop-id="s9p5">
-            <a href="#">
-              <span class="btn_span"></span>
-            </a>
-          </div>
-          <div class="btn_go_pop btn_go_pop6" data-pop-id="s9p6">
-            <a href="#">
-              <span class="btn_span"></span>
-            </a>
-          </div>
-          <div class="btn_go_pop btn_go_pop7" data-pop-id="s9p7">
-            <a href="#">
-              <span class="btn_span"></span>
-            </a>
-          </div>
-        </div>
-        <div class="cont cont_10"></div>
-        <div class="cont cont_11">
-          <div class="btn_go btn_go1">
-            <a target="_blank" href="">
-              <span class="btn_span">블록버STAR TOON 자세히 보기</span>
-            </a>
-          </div>
-          <div class="btn_go btn_go2">
-            <a target="_blank" href="">
-              <span class="btn_span">웹툰 감상하러 가기</span>
-            </a>
-          </div>
-          <div class="btn_go btn_go3">
-            <a target="_blank" href="">
-              <span class="btn_span">웹툰 감상하러 가기</span>
-            </a>
+          <div class="level_block">
+            <div class="level_title">
+              <div class="leftImg"></div>
+              <p>等級開放</p>
+              <div class="rightImg"></div>
+            </div>
+            <br />
+            <div class="level_desc">僅說明升級時新增或變更的效果</div>
+            <div class="level_table"></div>
           </div>
         </div>
-        <div class="cont cont_12">
+        <div class="cont cont_10">
+          <div class="textBox">
+            <div class="txt"></div>
+            <p class="description">
+              祕法綜合等級所對應的能力值上限解鎖效果，<br />已新增至200等級。
+            </p>
+          </div>
+          <div class="content"></div>
           <div class="btn_go">
-            <a target="_blank" href="">
-              <span class="btn_span">초보를 위한 아르카나 달성 미션</span>
+            <a
+              target="_blank"
+              href="https://mabinogi.nexon.com/page/news/event_view.asp?id=4892354 "
+            >
+              <span class="btn_span"></span>
             </a>
-          </div>
-        </div>
-        <div class="event_info_wrap">
-          <h2>안내 사항 <small>꼭 읽어주세요</small></h2>
-          <div class="event_ibox" id="event_ibox2">
-            <p><span style="font-weight: bold">[연재 정보 상세 안내]</span></p>
-
-            <table
-              class="se-responsive"
-              data-template-id="1"
-              style="
-                width: 87.62%;
-                line-height: normal;
-                vertical-align: text-bottom;
-                border-collapse: collapse;
-                -ms-word-break: break-all;
-              "
-            >
-              <colgroup>
-                <col style="width: 11.58%" />
-                <col style="width: 23.96%" />
-                <col style="width: 32.93%" />
-                <col style="width: 12.78%" />
-                <col style="width: 18.73%" />
-              </colgroup>
-              <tbody>
-                <tr style="height: 11px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                      background-color: rgb(128, 128, 255);
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span style="color: rgb(255, 255, 255); font-weight: bold"
-                        >작</span
-                      ><span
-                        style="color: rgb(255, 255, 255); font-weight: bold"
-                        >가명</span
-                      >
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                      background-color: rgb(128, 128, 255);
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span style="color: rgb(255, 255, 255); font-weight: bold"
-                        >타이틀</span
-                      >
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                      background-color: rgb(128, 128, 255);
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span style="color: rgb(255, 255, 255); font-weight: bold"
-                        >소개말</span
-                      >
-                    </p>
-                  </td>
-                  <td
-                    colspan="2"
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                      background-color: rgb(128, 128, 255);
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span style="color: rgb(255, 255, 255); font-weight: bold"
-                        >연재 계획</span
-                      >
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 30px">
-                  <td
-                    rowspan="4"
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: center;
-                      vertical-align: middle;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>전구</span>
-                    </p>
-                  </td>
-                  <td
-                    rowspan="4"
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>영웅의 자격</span>
-                    </p>
-                  </td>
-                  <td
-                    rowspan="4"
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>이 세계에 남기 위해 증명하라!</span>
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>12/19(목)</span>
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>1화</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 17px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span
-                        ><strike>1/2(목)</strike><br />
-                        → 1/9(목)</span
-                      >
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>2화</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 7px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>1/16(목)</span>
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>3화</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>1/31(금)</span>
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>4화</span>
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <p
-              style="
-                margin: 16px 0px;
-                text-align: justify;
-                line-height: 2;
-                font-size: 12pt;
-                display: block;
-                overflow-wrap: break-word;
-              "
-            >
-              &nbsp;
-            </p>
-
-            <table
-              data-template-id="1"
-              style="
-                width: 87.5%;
-                line-height: normal;
-                vertical-align: text-bottom;
-                border-collapse: collapse;
-                -ms-word-break: break-all;
-              "
-            >
-              <colgroup>
-                <col style="width: 11.59%" />
-                <col style="width: 23.99%" />
-                <col style="width: 32.97%" />
-                <col style="width: 12.8%" />
-                <col style="width: 18.62%" />
-              </colgroup>
-              <tbody>
-                <tr style="height: 11px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                      background-color: rgb(128, 128, 255);
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span style="color: rgb(255, 255, 255); font-weight: bold"
-                        >작</span
-                      ><span
-                        style="color: rgb(255, 255, 255); font-weight: bold"
-                        >가명</span
-                      >
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                      background-color: rgb(128, 128, 255);
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span style="color: rgb(255, 255, 255); font-weight: bold"
-                        >타이틀</span
-                      >
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                      background-color: rgb(128, 128, 255);
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span style="color: rgb(255, 255, 255); font-weight: bold"
-                        >소개말</span
-                      >
-                    </p>
-                  </td>
-                  <td
-                    colspan="2"
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                      background-color: rgb(128, 128, 255);
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span style="color: rgb(255, 255, 255); font-weight: bold"
-                        >연재 계획</span
-                      >
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 30px">
-                  <td
-                    rowspan="4"
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: center;
-                      vertical-align: middle;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>스콜라</span>
-                    </p>
-                  </td>
-                  <td
-                    rowspan="4"
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>굴러서 에린 속으로</span>
-                    </p>
-                  </td>
-                  <td
-                    rowspan="4"
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>새로운 아르카나 발현자들이</span><br />
-                      <span>궁금한&nbsp;</span><span>당신을 위해!</span><br />
-                      <span>&lt;굴러서 게임 속으로&gt;가 에린 세계에</span
-                      ><br />
-                      <span>상륙했습니다.</span>
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>12/19(목)</span>
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>세이크리드 가드(상)</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 17px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>12/24(화)</span>
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>세이크리드 가드(하)</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 7px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>1/16(목)</span>
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>블래스트 랜서(상)</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>1/23(목)</span>
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>블래스트 랜서(하)</span>
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <p
-              style="
-                margin: 16px 0px;
-                text-align: justify;
-                line-height: 2;
-                font-size: 12pt;
-                display: block;
-                overflow-wrap: break-word;
-              "
-            >
-              &nbsp;
-            </p>
-
-            <table
-              data-template-id="1"
-              style="
-                width: 87.61%;
-                line-height: normal;
-                vertical-align: text-bottom;
-                border-collapse: collapse;
-                -ms-word-break: break-all;
-              "
-            >
-              <colgroup>
-                <col style="width: 11.58%" />
-                <col style="width: 23.96%" />
-                <col style="width: 32.93%" />
-                <col style="width: 12.78%" />
-                <col style="width: 18.73%" />
-              </colgroup>
-              <tbody>
-                <tr style="height: 11px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                      background-color: rgb(128, 128, 255);
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span style="color: rgb(255, 255, 255); font-weight: bold"
-                        >작</span
-                      ><span
-                        style="color: rgb(255, 255, 255); font-weight: bold"
-                        >가명</span
-                      >
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                      background-color: rgb(128, 128, 255);
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span style="color: rgb(255, 255, 255); font-weight: bold"
-                        >타이틀</span
-                      >
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                      background-color: rgb(128, 128, 255);
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span style="color: rgb(255, 255, 255); font-weight: bold"
-                        >소개말</span
-                      >
-                    </p>
-                  </td>
-                  <td
-                    colspan="2"
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                      background-color: rgb(128, 128, 255);
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span style="color: rgb(255, 255, 255); font-weight: bold"
-                        >연재 계획</span
-                      >
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 43px">
-                  <td
-                    rowspan="9"
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: center;
-                      vertical-align: middle;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>도리도리</span>
-                    </p>
-                  </td>
-                  <td
-                    rowspan="9"
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>다시 한 번 마비노기</span>
-                    </p>
-                  </td>
-                  <td
-                    rowspan="9"
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>아주 오랜만에 복귀한</span><br />
-                      <span>밀레시안의 이야기</span>
-                    </p>
-                  </td>
-                  <td
-                    rowspan="4"
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>12/19(목)</span>
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>프롤로그</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 17px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>1화</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 7px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>2화</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 44px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>3화</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 44px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>12/24(화)</span>
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>4화</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 44px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span
-                        ><strike>1/2(목)</strike><br />
-                        → 1/9(목)</span
-                      >
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>5화</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 44px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>1/9(목)</span>
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>6화</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 44px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>1/16(목)</span>
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>7화</span>
-                    </p>
-                  </td>
-                </tr>
-                <tr style="height: 44px">
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>1/23(목)</span>
-                    </p>
-                  </td>
-                  <td
-                    style="
-                      padding: 5px;
-                      border: 1px solid rgb(0, 0, 0);
-                      border-image: none;
-                      text-align: left;
-                    "
-                  >
-                    <p
-                      style="
-                        margin: 0px;
-                        text-align: center;
-                        line-height: 2;
-                        font-size: 12pt;
-                        display: block;
-                        overflow-wrap: break-word;
-                      "
-                    >
-                      <span>8화</span>
-                    </p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <p
-              style="
-                margin: 16px 0px;
-                text-align: justify;
-                line-height: 2;
-                font-size: 12pt;
-                display: block;
-                overflow-wrap: break-word;
-              "
-            >
-              일부 일정이 변경되어 수정하였습니다.(내용수정 12/30(월) 오후 2시
-              5분)
-            </p>
           </div>
         </div>
       </div>
 
       <div class="nav" style="display: none">
-        <ul>
-          <li style="display: none"></li>
-          <li></li>
-        </ul>
         <div class="btn_go_main"></div>
+        <div class="tab2_btn"></div>
       </div>
       <!-- // Contents End -->
       <div id="sideNav" class="side_nav">
@@ -1558,20 +254,14 @@
                   <span class="btn_span">공식 홈페이지 바로가기</span>
                 </a>
               </div>
-              <div class="today_box">
-                <input id="today_check" type="checkbox" />
-                <label for="today_check">
-                  <span class="btn_span">오늘 하루 보지 않기</span>
-                </label>
-              </div>
               <!-- 해당 항목 활성화 on 클래스 추가 -->
               <ul class="btn_box ss">
-                <li class="open">
+                <li class="open on">
                   <a href="">
                     <span class="btn_span">사전 이벤트</span>
                   </a>
                 </li>
-                <li class="open on">
+                <li class="open">
                   <a href="">
                     <span class="btn_span">블록버스타 1차 업데이트</span>
                   </a>
@@ -1584,29 +274,6 @@
                 <li class="open">
                   <a href="">
                     <span class="btn_span">브리 레흐 최종장</span>
-                  </a>
-                </li>
-              </ul>
-              <ul class="btn_box">
-                <li class="open">
-                  <a href="">
-                    <span class="btn_txt">한겨울의 빛나는 도약</span>
-                  </a>
-                </li>
-              </ul>
-              <ul class="btn_box">
-                <li class="open">
-                  <a href="">
-                    <span class="btn_txt">샤이의 PC방 샤이닝 시즌 2</span>
-                  </a>
-                </li>
-              </ul>
-              <ul class="btn_box">
-                <li class="open">
-                  <a href="">
-                    <span class="btn_txt"
-                      >마비노기와 함께하는 PC방 프로모션</span
-                    >
                   </a>
                 </li>
               </ul>
@@ -1648,54 +315,303 @@
       </a>
     </div>
 
-    <div class="pop_dimmed" style="display: none"></div>
-
-    <div class="pop_mov" style="display: none">
-      <div class="pop_close"></div>
-    </div>
-
     <div class="pop_wrap">
       <div class="pop_bg"></div>
       <div class="pop_box">
         <div class="pop s9p1">
-          <div class="v v1">
-            <video src="./video/1.mp4" muted loop playsinline autoplay></video>
+          <div class="skill_area">
+            <div class="title">聖域展開</div>
+            <div class="desc">這戰場宣告由「聖盾守衛」成為主宰的領域。</div>
+            <div class="content">
+              <div class="subContent">
+                <div class="subTitle_block">
+                  <div class="leftImg"></div>
+                  <div class="subTitle">使用方法</div>
+                  <div class="rightImg"></div>
+                </div>
+                <div class="subDesc">
+                  施展後會立刻揮下盾牌，
+                  <br />
+                  對周圍敵人造成與防禦力成比例的傷害。
+                  <br /><br />
+                  同時使戰場上的敵人，
+                  <br />
+                  在一段時間內將視線集中在自己身上。
+                  <br /><br />
+                  由於巨大的存在感，
+                  <br />
+                  即使受到其他干擾，被奪走的視線也不會轉移。
+                  <br />
+                  對這位聖域的主人的攻擊，
+                  <br />
+                  不會使其陷入硬直或倒地狀態。
+                </div>
+              </div>
+              <div class="v v1">
+                <video
+                  src="./video/1.mp4"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                ></video>
+              </div>
+            </div>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p2">
-          <div class="v v1">
-            <video src="./video/2.mp4" muted loop playsinline autoplay></video>
+          <div class="skill_area">
+            <div class="title">零秒嘲諷</div>
+            <div class="desc">任何敵人都不敢在聖盾守衛的領域內分心。</div>
+            <div class="content">
+              <div class="subContent">
+                <div class="subTitle_block">
+                  <div class="leftImg"></div>
+                  <div class="subTitle">使用方法</div>
+                  <div class="rightImg"></div>
+                </div>
+                <div class="subDesc">
+                  指定一個區域，
+                  <br />
+                  對該區域內的敵人
+                  <br />
+                  造成與自身防禦力成比例的攻擊。
+                  <br /><br />
+                  此時，
+                  <br />
+                  受到攻擊的敵人會瞬間被吸引視線，
+                  <br />
+                  將注意力集中到施術者身上。
+                  <br />
+                  <br />
+                  <div class="hint">
+                    * 只能在技能「聖域展開」的影響範圍內
+                    <br />
+                    指定要攻擊的區域。
+                  </div>
+                </div>
+              </div>
+              <div class="v v1">
+                <video
+                  src="./video/2.mp4"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                ></video>
+              </div>
+            </div>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p3">
-          <div class="v v1">
-            <video src="./video/3.mp4" muted loop playsinline autoplay></video>
+          <div class="skill_area">
+            <div class="title">榮光獻祭</div>
+            <div class="desc">
+              最先站出的犧牲者，將守護這片戰場上的所有夥伴。
+            </div>
+            <div class="content">
+              <div class="subContent">
+                <div class="subTitle_block">
+                  <div class="leftImg"></div>
+                  <div class="subTitle">使用方法</div>
+                  <div class="rightImg"></div>
+                </div>
+                <div class="subDesc">
+                  對聚集在施法者周圍的友軍施放高潔的犧牲。
+                  <br /><br />
+                  之後，
+                  <br />
+                  當戰鬥中的友軍受到攻擊時，
+                  <br />
+                  其部分傷害會傳遞給施法者，
+                  <br />
+                  但不是一次性傳遞，
+                  <br />
+                  而是分散持續地接收。
+                  <br /><br />
+                  <div class="hint">
+                    * 只能在技能「聖域展開」的影響範圍內
+                    <br />
+                    指定要攻擊的區域。
+                  </div>
+                </div>
+              </div>
+              <div class="v v1">
+                <video
+                  src="./video/3.mp4"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                ></video>
+              </div>
+            </div>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p4">
-          <div class="v v1">
-            <video src="./video/4.mp4" muted loop playsinline autoplay></video>
+          <div class="skill_area">
+            <div class="title">盾擊衝鋒</div>
+            <div class="desc">蜂擁而至的盾牌如同撞上巨大壁壘般，令人畏懼。</div>
+            <div class="content">
+              <div class="subContent">
+                <div class="subTitle_block">
+                  <div class="leftImg"></div>
+                  <div class="subTitle">使用方法</div>
+                  <div class="rightImg"></div>
+                </div>
+                <div class="subDesc">
+                  瞬間移動到一定距離外敵人前方，
+                  <br />
+                  並用手中的盾牌猛烈推擊。
+                  <br /><br />
+                  範圍內被攻擊的敵人會被推向盾牌前方，
+                  <br />
+                  慘遭摔倒。
+                  <br />
+                  若未倒地，則會短暫僵直。
+                  <br /><br />
+                  <div class="hint">* 衝突傷害會受到攻擊力和防禦力的影響</div>
+                </div>
+              </div>
+              <div class="v v1">
+                <video
+                  src="./video/4.mp4"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                ></video>
+              </div>
+            </div>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p5">
-          <div class="v v1">
-            <video src="./video/5.mp4" muted loop playsinline autoplay></video>
+          <div class="skill_area">
+            <div class="title">盾崩強襲</div>
+            <div class="desc">以強勁的臂力揮舞的盾牌，瞬間擊潰敵人的士氣。</div>
+            <div class="content">
+              <div class="subContent">
+                <div class="subTitle_block">
+                  <div class="leftImg"></div>
+                  <div class="subTitle">使用方法</div>
+                  <div class="rightImg"></div>
+                </div>
+                <div class="subDesc">
+                  對施法者前方一定範圍內的敵人
+                  <br />
+                  揮動盾牌進行攻擊。
+                  <br /><br />
+                  被盾牌擊中的敵人，
+                  <br />
+                  防禦、魔法防禦、保護、魔法保護會減少。
+                  <br /><br />
+                  被多次擊中時，
+                  <br />
+                  效果會成倍增強。
+                  <br /><br />
+                  <div class="hint">* 衝突傷害會受到攻擊力和防禦力的影響</div>
+                </div>
+              </div>
+              <div class="v v1">
+                <video
+                  src="./video/5.mp4"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                ></video>
+              </div>
+            </div>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p6">
-          <div class="v v1">
-            <video src="./video/6.mp4" muted loop playsinline autoplay></video>
+          <div class="skill_area">
+            <div class="title">審判之盾</div>
+            <div class="desc">站在這面盾牌前的敵人，只能迎接慘烈的審判。</div>
+            <div class="content">
+              <div class="subContent">
+                <div class="subTitle_block">
+                  <div class="leftImg"></div>
+                  <div class="subTitle">使用方法</div>
+                  <div class="rightImg"></div>
+                </div>
+                <div class="subDesc">
+                  用盾牌猛力砸下，
+                  <br />
+                  對施法者周圍一定範圍內的敵人造成打擊，
+                  <br />
+                  被擊中的敵人移動速度會在短時間內減少。
+                  <br /><br />
+                  <div class="hint">
+                    * 旋風擺蓮腿的傷害會受到攻擊力和防禦力的影響。
+                    <br />
+                    * 旋風擺蓮腿的範圍會根據技能的範圍大小<br />而影響作用範圍。
+                    <br />
+                    * 如果先被「鐵壁強打」命中，<br />則根據被命中次數，傷害會增加。
+                  </div>
+                </div>
+              </div>
+              <div class="v v1">
+                <video
+                  src="./video/6.mp4"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                ></video>
+              </div>
+            </div>
           </div>
           <div class="pop_close"></div>
         </div>
         <div class="pop s9p7">
-          <div class="v v1">
-            <video src="./video/7.mp4" muted loop playsinline autoplay></video>
+          <div class="skill_area">
+            <div class="title">犧牲的懲罰</div>
+            <div class="desc">
+              橫掃戰場的聖盾守衛氣勢，使所有敵人都感到畏懼。
+            </div>
+            <div class="content">
+              <div class="subContent">
+                <div class="subTitle_block">
+                  <div class="leftImg"></div>
+                  <div class="subTitle">使用方法</div>
+                  <div class="rightImg"></div>
+                </div>
+                <div class="subDesc">
+                  技能施放瞬間，
+                  <br />
+                  周圍敵人會被僵直。
+                  <br /><br />
+                  同時，
+                  <br />
+                  榮光獻祭技能所造成的持續傷害效果暫停，
+                  <br />
+                  並根據因榮光獻祭而累積的隊友所受傷害數值，
+                  <br />
+                  對敵人造成相應的傷害。
+                  <br /><br />
+                  <div class="hint">
+                    * 受榮光獻祭所獲得的犧牲數值和防禦力影響。
+                    <br />
+                    * 持續時間會受到魔法護盾持續時間的影響。
+                  </div>
+                </div>
+              </div>
+              <div class="v v1">
+                <video
+                  src="./video/7.mp4"
+                  muted
+                  loop
+                  playsinline
+                  autoplay
+                ></video>
+              </div>
+            </div>
           </div>
           <div class="pop_close"></div>
         </div>
