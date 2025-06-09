@@ -296,7 +296,7 @@
   }
 
   .cont_08 .btn_char .bg .bbox .content {
-    width: 225px;
+    width: 185px;
     height: 290px;
   }
 
@@ -314,7 +314,7 @@
   }
 
   .cont_08 .btn_char .bg .bbox .ctxt {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 15px;
   }
 
@@ -366,6 +366,7 @@
   .cont_09 .skills_set {
     top: 780px;
     position: absolute;
+    flex-wrap: wrap;
     display: flex;
     align-self: center;
     justify-content: center;
