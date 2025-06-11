@@ -1395,9 +1395,10 @@ span.btn_span {
 
 .cont_08 .char_txt .char_saying {
     text-align: center;
-    color: #476270;
+    color: #99c8df;
     font-weight: 400;
     font-size: 23px;
+    line-height: 1.5;
 }
 
 .cont_08 .char_txt .char_title {
@@ -1460,7 +1461,7 @@ span.btn_span {
     text-align: center;
     line-height: 2;
     z-index: 2;
-    color: #6c8992;
+    color: #98d2c7;
     font-weight: 400;
     font-size: 23px;
 }
@@ -1666,7 +1667,7 @@ span.btn_span {
 }
 
 .cont_09 .level_block .level_desc {
-    color: #6c8992;
+    color: #98d2c7;
     font-weight: 400;
     font-size: 23px;
 }
