@@ -119,9 +119,10 @@
   }
 
   .cont_09 .level_block .level_table {
+    background-image: url(../img/page/m_cont_09_table.png);
     width: 100vw;
     height: unset;
-    aspect-ratio: 400 / 407;
+    aspect-ratio: 792 / 1089;
   }
 
   .cont_10>.textBox>.txt {
@@ -294,8 +295,9 @@
   }
 
   .cont_08 .btn_char .bg .bbox .content {
-    width: 185px;
+    width: 175px;
     height: 290px;
+    margin-left: 10px;
   }
 
   .bgm_info {
@@ -383,9 +385,10 @@
   }
 
   .cont_09 .level_block .level_table {
+    background-image: url(../img/page/m_cont_09_table.png);
     width: 100vw;
     height: unset;
-    aspect-ratio: 400 / 407;
+    aspect-ratio: 792 / 1089;
   }
 
   .cont_09>.textBox>.txt {
